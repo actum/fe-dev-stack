@@ -1,0 +1,25 @@
+html {
+  &.no-scroll {
+    overflow: hidden;
+
+    body {
+      overflow: hidden;
+    }
+  }
+}
+
+// For sticky footer
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex: 1 0 auto;
+}

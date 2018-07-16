@@ -1,0 +1,69 @@
+//
+// List
+//
+
+// Variables
+
+$list-padding-left: rem(40);
+$list-margin-bottom: rem(16);
+
+$dd-margin-bottom: rem(16);
+$dt-font-weight: $font-weight-bold;
+
+// Core styles
+
+ol,
+ul,
+dl {
+  margin-bottom: $list-margin-bottom;
+
+  li {
+    margin-bottom: rem(8);
+  }
+}
+
+ul,
+ol {
+  padding-left: $list-padding-left;
+}
+
+dd {
+  margin-bottom: $dd-margin-bottom;
+}
+
+dt {
+  font-weight: $dt-font-weight;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    position: relative;
+  }
+
+  li::before {
+    @include size(rem(6));
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    background-color: $gray-base;
+    border-radius: 50%;
+    content: '';
+    transform: translate(-100%, -50%);
+  }
+}
+
+.list--unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    text-indent: 0;
+  }
+
+  li::before {
+    content: none;
+  }
+}

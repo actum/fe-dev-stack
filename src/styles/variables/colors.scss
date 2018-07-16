@@ -1,0 +1,46 @@
+//
+// Colors
+//
+
+// Basic color variables
+
+$transparent: rgba(255, 255, 255, 0);
+
+// The lightest and the darkest color
+$white: #fff;
+$black: #28282d;
+
+$red-base: #ed3d25;
+$red-lighter: #ffc9cb;
+
+$aqua-lightest: #d7f0f2;
+$aqua-light: #a1d8dd;
+
+$green-lighter: #bbf0d2;
+
+$orange-lighter: #ffdabf;
+
+$gray-lightest: #ced2db;
+$gray-lighter: #d4d4d5;
+$gray-light: #aab0be;
+$gray-base: #949496;
+$gray-darker: #868ea3;
+$gray-dark: #737376;
+
+// Base theme colors
+
+$color-primary: $red-base;
+$color-secondary: $aqua-lightest;
+$color-disabled: lighten($black, 20%);
+
+$theme-colors: (
+  primary: $color-primary,
+  secondary: $red-base,
+);
+
+$alert-colors: (
+  error: $red-lighter,
+  info: $aqua-light,
+  success: $green-lighter,
+  warning: $orange-lighter
+);

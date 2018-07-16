@@ -1,0 +1,33 @@
+//
+// Buttons
+//
+
+/**
+ * Generate main type buttons - each from theme color
+ * @param {String} color - Color that styling will be generated from
+ */
+@mixin button-variant($type, $states) {
+  color: set-button-text-color($type, $states);
+  background-color: map-get($states, 'default');
+  border-color: map-get($states, 'default');
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled),
+  &:active:not(:disabled) {
+    color: color-yiq(map-get($states, 'default'));
+  }
+
+  &:hover:not(:disabled) {
+    background-color: map-get($states, 'hover');
+    border-color: map-get($states, 'hover');
+  }
+
+  &:focus:not(:disabled) {
+    border-color: #fff;
+  }
+
+  &:active:not(:disabled) {
+    background-color: map-get($states, 'active');
+    border-color: map-get($states, 'active');
+  }
+}

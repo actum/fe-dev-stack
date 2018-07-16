@@ -1,0 +1,19 @@
+<mj-section>
+
+  <mj-column>
+    <mj-divider padding="40px 0 24px 0" />
+  </mj-column>
+
+</mj-section>
+
+<mj-section>
+
+  <mj-column>
+  	<mj-text mj-class="footer-text">
+      <a class="footer-link" href="www.yachting.com">www.yachting.com</a>
+      <a class="footer-link" href="tel:+420732445889">+420 732 445 889</a>
+      <a class="footer-link" href="mailto:help@yachting.com">help@yachting.com</a>
+    </mj-text>
+  </mj-column>
+
+</mj-section>

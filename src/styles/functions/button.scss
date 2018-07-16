@@ -1,0 +1,15 @@
+/**
+ * Set button text color based on type
+ * @param {String} type - Button type, one of (primary, secondary, default)
+ * @param {Map} states - Map of button states (default, hover...)
+ * @returns {String} $white || yiq-text-dark | yiq-text-light - White or darker/lighter color
+ */
+@function set-button-text-color($type, $states) {
+  @if ($type == 'default') {
+    @return $white;
+  }
+
+  @else {
+    @return color-yiq(map-get($states, 'default'));
+  }
+}

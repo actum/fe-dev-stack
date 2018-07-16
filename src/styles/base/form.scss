@@ -1,0 +1,387 @@
+//
+// Form
+//
+
+// Variables
+
+$form-width: rem(300);
+
+$input-group-margin-bottom: rem(16);
+
+$input-height: rem(40);
+$input-padding-y: rem(10);
+$input-padding-x: rem(10);
+$input-padding-sm-y: rem(6);
+$input-padding-sm-x: rem(8);
+$input-icon-color: $gray-dark;
+$input-icon-color-active: $color-primary;
+$input-font-size: $font-size-base;
+$input-font-weight: $font-weight-normal;
+$input-line-height: normal;
+$input-color: $body-color;
+$input-bg: $white;
+$input-border-width: 0;
+$input-box-shadow: 0 0 0 1px $gray-lightest;
+$input-box-shadow-focus: 0 0 0 2px $color-primary;
+$input-border-radius: $border-radius;
+$input-disabled-opacity: .5;
+$input-disabled-bg: rgba($color-disabled, $input-disabled-opacity);
+$input-disabled-color: rgba($body-color, $input-disabled-opacity);
+$input-transition-property: box-shadow;
+$input-transition-duration: $duration-shortest;
+$input-transition-easing: $easing;
+$input-placeholder-color: $gray-base;
+
+$input-label-margin-bottom: rem(6);
+$input-label-font-size: $font-size-md;
+$input-label-line-height: 1.2;
+$input-label-color: inherit;
+// To calculate position of passwordReveal button and icon in <select>
+$input-label-height: floor($input-label-font-size * $input-label-line-height) +
+  $input-label-margin-bottom;
+
+$input-error-margin-top: rem(6);
+$input-error-font-size: $font-size-sm;
+$input-error-line-height: 1.2;
+$input-error-color: $red-base;
+$input-error-box-shadow: 0 0 0 1px $input-error-color;
+
+$password-toggle-icon-name: 'icon-eye';
+$password-toggle-icon-size: rem(18);
+
+$select-icon-name: '../assets/svg/icon-chevron-down-full';
+$select-icon-width: rem(8);
+$select-icon-height: rem(6);
+
+$input-check-z-index: $z-index-below;
+$input-check-size: rem(14);
+$input-check-margin-right: rem(8);
+$input-check-bg-color: $white;
+$input-check-line-height: 1.2;
+$input-check-border-width: 1px;
+$input-check-border-color: $gray-base;
+$input-check-border-radius: 3px;
+$input-check-icon-name: '../assets/svg/icon-tick';
+$input-check-icon-size: rem(10);
+$input-check-color-active: $color-primary;
+$input-check-radio-bg: $color-primary;
+$input-check-radio-bg-active: $white;
+$input-check-radio-active-size: rem(6);
+$input-check-transition-property: background-color, border;
+$input-check-transition-duration: $duration-shorter;
+$input-check-transition-easing: $easing;
+
+// Core styles
+
+.form {
+  @include media-breakpoint-up(sm) {
+    max-width: $form-width;
+  }
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: $input-group-margin-bottom;
+
+  &--inline {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: $input-height;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $input-font-size;
+  font-weight: $input-font-weight;
+  line-height: $input-line-height;
+  color: $input-color;
+  background-color: $input-bg;
+  border: $input-border-width;
+  border-radius: $input-border-radius;
+  box-shadow: $input-box-shadow;
+  transition-property: $input-transition-property;
+  transition-duration: $input-transition-duration;
+  transition-timing-function: $input-transition-easing;
+  background-clip: padding-box;
+
+  .has-error & {
+    box-shadow: $input-error-box-shadow;
+  }
+
+  &:focus {
+    border-color: $transparent;
+    outline: 0;
+    box-shadow: $input-box-shadow-focus;
+  }
+
+  &:disabled {
+    color: $input-disabled-color;
+    background-color: $input-disabled-bg;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &::placeholder {
+    // Hide default browser placeholder
+    color: $input-placeholder-color;
+  }
+
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $input-label-margin-bottom;
+    font-size: $input-label-font-size;
+    line-height: $input-label-line-height;
+    color: $input-label-color;
+
+    .inputGroup--inline & {
+      flex: none;
+      width: 100%;
+    }
+  }
+
+  &-labelText {
+    @include text-truncate;
+    display: block;
+    flex: 1 1 auto;
+
+    &:first-child {
+      max-width: 60%;
+      padding-right: 5px;
+    }
+
+    & + & {
+      max-width: 50%;
+      text-align: right;
+      opacity: .6;
+    }
+  }
+
+  &-error {
+    display: block;
+    flex: none;
+    width: 100%;
+    margin-top: $input-error-margin-top;
+    font-size: $input-error-font-size;
+    line-height: $input-error-line-height;
+    color: $input-error-color;
+    text-align: left;
+  }
+}
+
+.input--password {
+  padding-right: calc(#{$password-toggle-icon-size} + #{$input-padding-x * 2});
+
+  // Remove default"Reveal password" eye icon in IE
+  &::-ms-reveal,
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+.input-passwordGroup {
+  position: relative;
+}
+
+.input-passwordReveal {
+  @include size($password-toggle-icon-size);
+  position: absolute;
+  top: 50%;
+  right: $input-padding-x;
+  color: $input-icon-color;
+  transform: translateY(-50%);
+
+  &.is-active {
+    color: $input-icon-color-active;
+  }
+
+  @at-root .input:disabled ~ .input-passwordReveal {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: $input-disabled-opacity;
+  }
+}
+
+.input--date {
+  max-width: 110px;
+}
+
+.input--textarea {
+  height: auto;
+  min-height: rem(80);
+}
+
+.input--select {
+  height: auto;
+  padding-right: calc(#{$select-icon-width} + #{$input-padding-x * 2});
+  background:
+    svg-load(
+      '#{$select-icon-name}.svg',
+      height=$select-icon-height,
+      width=$select-icon-width,
+      fill=$input-icon-color
+    )
+    calc(100% - #{$input-padding-x}) center no-repeat;
+  background-size: $select-icon-width $select-icon-height;
+  // Reset <select> appearance, rounded corners, carets, etc.
+  appearance: none;
+
+  // Unstyle the caret on <select> in IE11+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:focus::-ms-value {
+    // @Bootstrap v4.0.0-beta.2
+    // Suppress the nested default white text on blue background highlight given to
+    // the selected option text when the (still closed) <select> receives focus
+    // in IE and (under certain conditions) Edge, as it looks bad and cannot be made to
+    // match the appearance of the native widget.
+    // See https://github.com/twbs/bootstrap/issues/19398.
+    color: $input-color;
+    background-color: $input-bg;
+  }
+
+  &:not([size]):not([multiple]) {
+    height: $input-height;
+  }
+}
+
+.input--small,
+.input--select.input--small:not([size]):not([multiple]) {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding:
+    $input-padding-sm-y
+    calc(#{$select-icon-width} + #{$input-padding-sm-x * 2}) $input-padding-sm-y
+    $input-padding-sm-x;
+}
+
+.input--tel {
+  display: flex;
+  align-items: center;
+  width: calc(#{rem(210)} + #{$input-padding-x});
+  padding: 0;
+  padding-left: $input-padding-x;
+
+  .rrui__input-field,
+  .rrui__select__button {
+    border-bottom: 0;
+  }
+
+  .rrui__select__options:not(.rrui__select__options--menu) {
+    width: calc(320px - #{$grid-gutter-width * 2});
+  }
+
+  .rrui__select__options--left-aligned {
+    left: -$input-padding-x;
+  }
+
+  .rrui__select__option {
+    padding-right: $input-padding-x;
+    padding-left: $input-padding-x;
+  }
+
+  .react-phone-number-input__row {
+    max-width: 100%;
+  }
+}
+
+.input--postalCode {
+  max-width: rem(160);
+}
+
+// Checkboxes and Radio buttons
+
+.checkGroup {
+  position: relative;
+  display: flex;
+}
+
+.check {
+  &-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: $input-check-line-height;
+
+    &::before {
+      @include size($input-check-size);
+      display: block;
+      flex: none;
+      margin-right: $input-check-margin-right;
+      background-color: $input-check-bg-color;
+      border: $input-check-border-width solid $input-check-border-color;
+      content: '';
+    }
+
+    &--checkbox {
+      &::before {
+        border-radius: $input-check-border-radius;
+        transition-property: $input-check-transition-property;
+        transition-duration: $input-check-transition-duration;
+        transition-timing-function: $input-check-transition-easing;
+      }
+
+      @at-root input[type='checkbox']:checked ~ .check-input--checkbox::before {
+        background:
+          $input-check-color-active
+          svg-load('#{$input-check-icon-name}.svg', fill=$white) center
+          no-repeat;
+        background-size: $input-check-icon-size;
+        border-color: $input-check-color-active;
+      }
+    }
+
+    &--radio {
+      @at-root input[type='radio']:checked ~ .check-input--radio::before {
+        background-color: $input-check-radio-bg;
+        border-color: $input-check-radio-bg;
+      }
+
+      &::before,
+      &::after {
+        border-radius: 50%;
+      }
+
+      &::after {
+        @include size($input-check-radio-active-size);
+        position: absolute;
+        top: 50%;
+        left: $input-check-size / 2;
+        content: '';
+        transform: translate(-50%, -50%);
+        transition-property: $input-check-transition-property;
+        transition-duration: $input-check-transition-duration;
+        transition-timing-function: $input-check-transition-easing;
+      }
+
+      @at-root input[type='radio']:checked ~ .check-input--radio::after {
+        background-color: $input-check-radio-bg-active;
+      }
+    }
+  }
+}
+
+// Hide checkbox(radio) and use custom styles as `.check-input--checkbox(radio)`
+input[type='checkbox'],
+input[type='radio'] {
+  position: absolute;
+  z-index: $input-check-z-index;
+  opacity: 0;
+
+  &:disabled ~ .check-label,
+  &:disabled ~ .check-input {
+    opacity: $input-disabled-opacity;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}

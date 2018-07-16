@@ -1,0 +1,12 @@
+/** @define header */
+
+//
+// Header
+//
+
+$header-bg-color: $color-primary;
+
+.header {
+  @include padding-vertical($grid-gutter-width);
+  background-color: $header-bg-color;
+}

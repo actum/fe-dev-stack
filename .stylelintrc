@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "indentation": 2,
+    "declaration-empty-line-before": "never",
+    "number-leading-zero": "never",
+    "at-rule-no-unknown": null,
+    "no-descending-specificity": null,
+  }
+}

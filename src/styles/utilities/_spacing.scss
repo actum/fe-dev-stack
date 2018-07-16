@@ -1,0 +1,64 @@
+//
+// Spacing
+//
+
+// Generate margin and padding classes for breakpoint and for each item in $spacers map
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint);
+
+    @each $prop, $abbrev in (margin: m, padding: p) {
+      @each $size, $length in $spacers {
+        .u-#{$abbrev}#{$infix}-#{$size} {
+          #{$prop}: $length !important;
+        }
+
+        .u-#{$abbrev}t#{$infix}-#{$size},
+        .u-#{$abbrev}y#{$infix}-#{$size} {
+          #{$prop}-top: $length !important;
+        }
+
+        .u-#{$abbrev}r#{$infix}-#{$size},
+        .u-#{$abbrev}x#{$infix}-#{$size} {
+          #{$prop}-right: $length !important;
+        }
+
+        .u-#{$abbrev}b#{$infix}-#{$size},
+        .u-#{$abbrev}y#{$infix}-#{$size} {
+          #{$prop}-bottom: $length !important;
+        }
+
+        .u-#{$abbrev}l#{$infix}-#{$size},
+        .u-#{$abbrev}x#{$infix}-#{$size} {
+          #{$prop}-left: $length !important;
+        }
+      }
+    }
+
+    // Special auto-margin utils
+
+    .u-m#{$infix}-auto {
+      margin: auto !important;
+    }
+
+    .u-mt#{$infix}-auto,
+    .u-my#{$infix}-auto {
+      margin-top: auto !important;
+    }
+
+    .u-mr#{$infix}-auto,
+    .u-mx#{$infix}-auto {
+      margin-right: auto !important;
+    }
+
+    .u-mb#{$infix}-auto,
+    .u-my#{$infix}-auto {
+      margin-bottom: auto !important;
+    }
+
+    .u-ml#{$infix}-auto,
+    .u-mx#{$infix}-auto {
+      margin-left: auto !important;
+    }
+  }
+}

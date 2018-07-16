@@ -1,0 +1,44 @@
+//
+// Forms
+//
+
+/**
+ * Generate input range track styles
+ * @param {String} width - Width of input range track
+ * @param {String} height - Height of input range track
+ */
+@mixin range-track($width, $height) {
+  width: $width;
+  height: $height;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+/**
+ * Generate input range thumb styles
+ * @param {String} width - Width of input range thumb
+ * @param {String} height - Height of input range thumb
+ * @param {String} color - Color of input range thumb
+ * @param {String} border-width - Border-width of input range thumb
+ * @param {String} border-color - Border-color of input range thumb
+ * @param {String} radius - Radius of input range thumb
+ * @param {String} box-shadow - Box-shadow of input range thumb
+ */
+@mixin range-thumb(
+  $width,
+  $height,
+  $color,
+  $border-width,
+  $border-color,
+  $radius,
+  $box-shadow
+) {
+  width: $width;
+  height: $height;
+  cursor: pointer;
+  background: $color;
+  border: $border-width solid $border-color;
+  border-radius: $radius;
+  box-shadow: $box-shadow;
+  appearance: none;
+}

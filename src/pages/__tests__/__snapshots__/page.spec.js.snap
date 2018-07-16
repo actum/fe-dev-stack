@@ -1,0 +1,1966 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`page renders async page config 1`] = `
+<html
+  lang="en"
+>
+  <head>
+    <meta
+      charSet="utf-8"
+    />
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    <title>
+      yachting°com
+    </title>
+    <link
+      href="/public/dev/main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header
+      className="header"
+    >
+      <div
+        className="header-container"
+      >
+        <div
+          className="header-navigationPanel"
+        >
+          <a
+            className="logo logo--white logo--orangeCircle"
+            href="/"
+          >
+            <svg
+              height="21"
+              viewBox="0 0 129 21"
+              width="129"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                className="logo-text"
+                d="M17.793 13.015v.692c-.392.668-1.084 1.152-1.868 1.152-.646 0-1.083-.322-1.083-1.037 0-.715.373-1.207 1.143-1.411.535-.142 1.195-.167 1.808-.087v.691zm-1.315-7.933c-1.576 0-2.98.414-4.046.975l.375 2.798c.892-.46 1.943-.798 3.118-.798 1.222 0 1.868.624 1.868 1.73v.368c-.832 0-1.815-.002-2.546.102-2.517.357-3.957 1.42-3.957 3.841 0 2.306 1.522 3.437 3.597 3.437 1.246 0 2.652-.577 3.251-1.337l.161 1.106h2.998V9.51c0-3.16-1.775-4.428-4.82-4.428zm26.725 4.365v7.857h-3.502V9.747c0-1.084-.369-1.567-1.36-1.567-.644 0-1.29.368-1.797.899v8.225h-3.502V.022h3.502v6.199c.622-.645 1.797-1.128 2.856-1.128 2.928 0 3.803 1.658 3.803 4.354zm8.947 7.604c-.691.322-1.75.484-2.511.484-3.065 0-4.032-1.29-4.032-4.355V8.087h-1.218V5.322h1.401l.554-2.281h2.765v2.281h2.903v2.765H49.11v4.84c0 1.22.3 1.682 1.244 1.682.485 0 .922-.07 1.291-.207l.507 2.65zm3.28-13.25c-1.175 0-1.958-.599-1.958-1.866C53.472.6 54.255 0 55.431 0c1.175 0 1.982.6 1.982 1.935 0 1.267-.807 1.866-1.982 1.866zm-1.727 1.521h3.503v11.982h-3.503zM69.45 9.447v7.857h-3.502V9.747c0-1.085-.347-1.567-1.337-1.567-.646 0-1.336.415-1.82 1.013v8.111h-3.503V5.322h3.064l.254.991c.691-.691 1.936-1.22 3.042-1.22 2.811 0 3.802 1.657 3.802 4.354zm8.246 3.457V8.479c-.553-.277-1.107-.368-1.66-.368-.967 0-1.567.484-1.567 1.796v1.752c0 1.245.414 1.958 1.453 1.958.713 0 1.312-.183 1.774-.713zm-6.499 7.027l.991-2.65c.944.461 2.189.737 3.387.737 1.406 0 2.121-.39 2.121-1.659v-.437c-.599.437-1.452.67-2.536.67-2.556 0-4.193-1.546-4.193-4.656V9.77c0-3.065 1.568-4.677 4.401-4.677 1.084 0 2.143.3 2.881.806l.437-.577H81.2V16.52c0 2.904-1.914 4.471-5.347 4.471-1.844 0-3.296-.345-4.655-1.06zm35.103-5.368c1.085 0 1.707-.76 1.684-2.212v-2.074c0-1.452-.599-2.212-1.683-2.212-1.082 0-1.659.76-1.659 2.212v2.074c-.023 1.452.577 2.212 1.659 2.212zm0-9.47c3.204 0 5.187 1.865 5.187 4.93v2.58c.022 3.066-1.983 4.932-5.186 4.932-3.202 0-5.16-1.866-5.16-4.932v-2.58c0-3.065 1.958-4.93 5.16-4.93zM129 9.286v8.018h-3.48V9.47c0-.945-.23-1.406-1.038-1.406-.783 0-1.383.577-1.727 1.06v8.18h-3.505V9.47c0-.83-.389-1.29-1.034-1.29-.647 0-1.247.415-1.73.99v8.134h-3.502V5.322h3.063l.256.991c.666-.692 1.82-1.22 2.947-1.22 1.2 0 2.122.437 2.697 1.45.898-.897 2.029-1.45 3.434-1.45 2.304 0 3.618 1.22 3.618 4.193z"
+              />
+              <path
+                className="logo-circle"
+                d="M86.993.004c2.09 0 3.79 1.7 3.79 3.788 0 2.091-1.7 3.792-3.79 3.792s-3.79-1.7-3.79-3.792c0-2.089 1.7-3.788 3.79-3.788zm0 2.186c-.883 0-1.604.719-1.604 1.602 0 .885.721 1.605 1.604 1.605a1.605 1.605 0 0 0 0-3.207z"
+              />
+              <path
+                className="logo-text"
+                d="M27.94 14.563c.992 0 2.092-.28 2.96-.746l.863 2.625c-1.1.657-2.62 1.093-4.077 1.093-3.11 0-4.93-1.89-4.93-4.955v-2.534c0-3.065 1.82-4.953 4.93-4.953 1.46 0 2.964.459 4.064 1.122l-.853 2.603c-.986-.507-1.976-.753-2.888-.753-1.175 0-1.75.783-1.75 2.234v2.052c0 1.451.46 2.212 1.682 2.212zm68.555 0c.991 0 2.091-.28 2.96-.746l.863 2.625c-1.1.658-2.62 1.093-4.077 1.093-3.109 0-4.93-1.89-4.93-4.954v-2.535c0-3.065 1.821-4.953 4.93-4.953 1.461 0 2.964.459 4.063 1.122l-.851 2.603c-.986-.506-1.977-.753-2.889-.753-1.174 0-1.75.784-1.75 2.234v2.052c0 1.452.461 2.212 1.681 2.212zm-88.5-9.242L5.9 12.602l-2.19-7.28H0l4.078 11.22-1.682 4.195h3.65l1.328-3.664 4.31-11.752z"
+              />
+            </svg>
+          </a>
+          <div>
+            <span
+              className="hamburger-label"
+            >
+              MENU
+            </span>
+            <button
+              className="hamburger hamburger--squeeze header-hamburger js-mobileNavigationToggle"
+              type="button"
+            >
+              <span
+                className="hamburger-box"
+              >
+                <span
+                  className="hamburger-inner header-hamburgerInner"
+                />
+              </span>
+            </button>
+          </div>
+        </div>
+        <nav
+          className="header-navigation js-mobileNavigation"
+        >
+          <ul
+            className="header-navigationList list--unstyled"
+          >
+            <li
+              className="header-navigationItem header-navigationItem--separator"
+            >
+              <a
+                className="btn btn--primary header-navigationLink"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Shortlist
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink js-modalBtn"
+                data-modal-id="modalSignUp"
+                href="#modalSignUp"
+                id="headerOpenSignUp"
+                onClick={[Function]}
+              >
+                Sign up
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink js-modalBtn"
+                data-modal-id="modalLogin"
+                href="#modalLogin"
+                id="headerOpenLogin"
+                onClick={[Function]}
+              >
+                Log in
+              </a>
+            </li>
+          </ul>
+          <ul
+            className="header-navigationList header-navigationList--main list--unstyled"
+          >
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Special Deals
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Boats rental
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Destinations
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      className="content"
+    >
+      <div
+        id="foo"
+      />
+    </main>
+    <footer
+      className="footer"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="footer-waves"
+        >
+          <div
+            className="waves"
+          >
+            <div
+              className="waves-water"
+            />
+            <svg
+              className="waves-icon"
+              fill="#000"
+              height="100%"
+              onClick={undefined}
+              style={undefined}
+              viewBox="0 0 15 23"
+              width="100%"
+            >
+              <path
+                d="M3.044 16.093A51.026 51.026 0 0 0 13.9 22.548l1.033.452-.108-1.123A50.479 50.479 0 0 0 8.038.971L7.467 0l-.571.97A50.475 50.475 0 0 0 .108 21.878L0 23l1.033-.452a51.08 51.08 0 0 0 4.661-2.33l.943-.532-.904-.598a52.208 52.208 0 0 1-2.888-2.057 46.7 46.7 0 0 0-.273 1.456c.503.375 1.013.74 1.527 1.097-.838.45-1.69.877-2.548 1.276A49.079 49.079 0 0 1 7.467 2.64a49.094 49.094 0 0 1 5.915 18.22 49.727 49.727 0 0 1-9.998-6.185c-.12.47-.234.942-.34 1.418z"
+              />
+            </svg>
+            <div
+              className="waves-water"
+            />
+          </div>
+          <div
+            className="waves"
+          >
+            <div
+              className="waves-water waves-water--left waves-water--single"
+            />
+          </div>
+        </div>
+        <div
+          className="footer-navigation"
+        >
+          <div
+            className="langSwitcher"
+            id="langSwitcherContainer"
+          />
+        </div>
+        <div
+          className="row socialBar"
+          id="socialBarContainer"
+        />
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                How can we help?
+              </h2>
+              <div
+                className="footer-phone"
+              >
+                <svg
+                  className="footer-phoneIcon"
+                  fill="#000"
+                  height="100%"
+                  onClick={undefined}
+                  style={undefined}
+                  viewBox="0 0 16 20"
+                  width="100%"
+                >
+                  <path
+                    d="M14.646 14.735a11.2 11.2 0 0 1-3.367-1.201c-.272-.148-.675-.122-1 .016l-2.511 1.714c-2.455-1.824-4.25-4.515-5.202-7.447l2.511-1.714c.343-.233.51-.597.37-.918-.095-1.102-.076-2.281.136-3.425.106-.573-.21-1.024-.788-1.129L1.418.021C.839-.086.383.226.277.798c-1.661 8.964 4.328 17.54 13.397 19.18.58.106 1.036-.206 1.142-.778l.618-3.338c.106-.572-.209-1.023-.788-1.128z"
+                  />
+                </svg>
+                <div
+                  className="footer-phoneNumber link--unstyled u-display-none u-display-lg-block"
+                >
+                  +420 271 913 506
+                </div>
+                <a
+                  className="footer-phoneNumber link--unstyled u-display-lg-none"
+                  href="tel:+420271913506"
+                >
+                  +420 271 913 506
+                </a>
+              </div>
+              <div
+                className="email"
+              >
+                <svg
+                  className="icon--baseline icon--left"
+                  fill="#000"
+                  height="100%"
+                  onClick={undefined}
+                  style={undefined}
+                  viewBox="0 0 13 13"
+                  width="100%"
+                >
+                  <path
+                    d="M8.048 7.353a2.197 2.197 0 0 0-1.526-.598c-.575 0-1.105.213-1.525.598l-.509.491-3.67-2.392a.536.536 0 0 0-.442-.065.43.43 0 0 0-.31.3.832.832 0 0 0-.066.32v5.874c0 .257.11.492.287.663a.53.53 0 0 0 .354.15.479.479 0 0 0 .354-.15s0-.022.022-.022l4.665-4.507c.221-.214.508-.32.818-.32.31 0 .597.106.818.32l3.98 3.845H2.896a.483.483 0 0 0-.486.47c0 .256.22.47.486.47h9.131a.987.987 0 0 0 .686-.278.922.922 0 0 0 .287-.662V6.007c0-.15-.044-.32-.11-.449a.97.97 0 0 0-.244-.277L7.65 1.2a1.787 1.787 0 0 0-2.255 0L1.636 4.255a.487.487 0 0 0-.066.684.529.529 0 0 0 .707.064l3.759-3.055c.287-.235.707-.235.973 0l4.2 3.397.53.427L9.75 7.075a.47.47 0 0 0-.133.662.508.508 0 0 0 .42.214.498.498 0 0 0 .288-.086l1.724-1.132v4.486L8.048 7.353zM3.78 8.528l-2.764 2.67V6.733L3.78 8.528z"
+                  />
+                </svg>
+                <a
+                  className="footer-link"
+                  href="mailto:help@yachting.com"
+                >
+                  help@yachting.com
+                </a>
+              </div>
+              <div
+                className="footer-copyright"
+              >
+                Copyright © 2005 – 2018. ZINDULKA, s.r.o.
+              </div>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Booking
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Geting and returning the boat
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Cancelation Policy
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Insurance
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Deposit insurance
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Sailing
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Picking the right boat
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Safety recomendations
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Tips for beginners
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Experienced Skippers
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Yachting.com
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Contacts
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Destinations
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="modalLoginContainer"
+    />
+    <div
+      id="modalSignUpContainer"
+    />
+    <div
+      id="modalResetPasswordContainer"
+    />
+    <div
+      id="modalChangePasswordContainer"
+    />
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "var JS_FEATURES_CONFIG = {\\"auth\\":{\\"localization\\":{\\"changePassword/button\\":\\"Save and log in\\",\\"changePassword/changePassword\\":\\"Change password\\",\\"changePassword/title\\":\\"Set your new password\\",\\"changePasswordSuccess/button\\":\\"Done\\",\\"changePasswordSuccess/message\\":\\"Please click on the link we’re sent you and set your new password. We’ll be here.\\",\\"changePasswordSuccess/title\\":\\"Reset link has been sent\\",\\"changePassword/error/mismatch\\":\\"Inputs has to match\\",\\"login/button\\":\\"Log in\\",\\"login/question\\":\\"Don’t have an account yet?\\",\\"login/questionLink\\":\\"Sign up\\",\\"login/resetPassword\\":\\"Reset password\\",\\"login/title\\":\\"Log in\\",\\"resetPassword/button\\":\\"Send reset link\\",\\"resetPassword/title\\":\\"Reset Password\\",\\"resetPassword/questionLink\\":\\"Log in\\",\\"resetPasswordSuccess/button\\":\\"Done\\",\\"resetPasswordSuccess/message\\":\\"Please click on the link we’re sent you and set your new password. We’ll be here.\\",\\"resetPasswordSuccess/title\\":\\"Reset link has been sent\\",\\"signUp/agreement\\":\\"I agree to the\\",\\"signUp/button\\":\\"Sign up\\",\\"signUp/question\\":\\"Already have an account?\\",\\"signUp/questionLink\\":\\"Log in\\",\\"signUp/termsAndConditions\\":\\"Terms & Conditions\\",\\"signUp/title\\":\\"Sign up\\",\\"signUpSuccess/button\\":\\"Done\\",\\"signUpSuccess/message\\":\\"Please check your email and activate your account, so we know it’s really you.\\",\\"signUpSuccess/title\\":\\"Ahoy! You’re signed up!\\",\\"form/email/label\\":\\"Email\\",\\"form/firstName/label\\":\\"First name\\",\\"form/lastName/label\\":\\"Last name\\",\\"form/password/help\\":\\"At least 6 characters\\",\\"form/password/label\\":\\"Password\\",\\"form/currentPassword/label\\":\\"Current password\\",\\"form/newPassword/label\\":\\"New password\\",\\"form/passwordConfirm/label\\":\\"Re-type password\\"}},\\"langSwitcher\\":{\\"localization\\":{\\"langSwitcher/label\\":\\"Language\\"},\\"languages\\":[{\\"label\\":\\"Česky\\",\\"link\\":\\"/cs\\",\\"selected\\":false},{\\"label\\":\\"English\\",\\"link\\":\\"/en\\",\\"selected\\":true},{\\"label\\":\\"Deutsch\\",\\"link\\":\\"/de\\",\\"selected\\":false},{\\"label\\":\\"Polski\\",\\"link\\":\\"/pl\\",\\"selected\\":false},{\\"label\\":\\"Slovensky\\",\\"link\\":\\"/sk\\",\\"selected\\":false}]},\\"socialBar\\":{\\"language\\":\\"cs_CZ\\",\\"localization\\":{\\"newsletter/title\\":\\"Stay up to date\\",\\"newsletter/description\\":\\"Sign up for our newsletter and we will inform you about the lates offers, news and events.\\",\\"newsletter/placeholder\\":\\"Your email\\",\\"newsletter/error/emailTooShort\\":\\"Please write in the password\\",\\"newsletter/button\\":\\"Subscribe\\",\\"social/title\\":\\"Follow us on social media\\"},\\"url\\":{\\"facebook\\":\\"https://www.facebook.com/zindulka.sailing/\\",\\"instagram\\":\\"https://www.instagram.com/yachtingcom/\\"}},\\"foo\\":\\"bar\\"}; var JS_FEATURES_INITIAL_STATE = {\\"auth\\":{\\"loggedIn\\":false}};",
+        }
+      }
+    />
+    <script
+      src="/public/dev/main.js"
+    />
+  </body>
+</html>
+`;
+
+exports[`page renders error when async config throws 1`] = `
+<html
+  lang="en"
+>
+  <head>
+    <meta
+      charSet="utf-8"
+    />
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    <title>
+      yachting°com
+    </title>
+    <link
+      href="/public/dev/main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header
+      className="header"
+    >
+      <div
+        className="header-container"
+      >
+        <div
+          className="header-navigationPanel"
+        >
+          <a
+            className="logo logo--white logo--orangeCircle"
+            href="/"
+          >
+            <svg
+              height="21"
+              viewBox="0 0 129 21"
+              width="129"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                className="logo-text"
+                d="M17.793 13.015v.692c-.392.668-1.084 1.152-1.868 1.152-.646 0-1.083-.322-1.083-1.037 0-.715.373-1.207 1.143-1.411.535-.142 1.195-.167 1.808-.087v.691zm-1.315-7.933c-1.576 0-2.98.414-4.046.975l.375 2.798c.892-.46 1.943-.798 3.118-.798 1.222 0 1.868.624 1.868 1.73v.368c-.832 0-1.815-.002-2.546.102-2.517.357-3.957 1.42-3.957 3.841 0 2.306 1.522 3.437 3.597 3.437 1.246 0 2.652-.577 3.251-1.337l.161 1.106h2.998V9.51c0-3.16-1.775-4.428-4.82-4.428zm26.725 4.365v7.857h-3.502V9.747c0-1.084-.369-1.567-1.36-1.567-.644 0-1.29.368-1.797.899v8.225h-3.502V.022h3.502v6.199c.622-.645 1.797-1.128 2.856-1.128 2.928 0 3.803 1.658 3.803 4.354zm8.947 7.604c-.691.322-1.75.484-2.511.484-3.065 0-4.032-1.29-4.032-4.355V8.087h-1.218V5.322h1.401l.554-2.281h2.765v2.281h2.903v2.765H49.11v4.84c0 1.22.3 1.682 1.244 1.682.485 0 .922-.07 1.291-.207l.507 2.65zm3.28-13.25c-1.175 0-1.958-.599-1.958-1.866C53.472.6 54.255 0 55.431 0c1.175 0 1.982.6 1.982 1.935 0 1.267-.807 1.866-1.982 1.866zm-1.727 1.521h3.503v11.982h-3.503zM69.45 9.447v7.857h-3.502V9.747c0-1.085-.347-1.567-1.337-1.567-.646 0-1.336.415-1.82 1.013v8.111h-3.503V5.322h3.064l.254.991c.691-.691 1.936-1.22 3.042-1.22 2.811 0 3.802 1.657 3.802 4.354zm8.246 3.457V8.479c-.553-.277-1.107-.368-1.66-.368-.967 0-1.567.484-1.567 1.796v1.752c0 1.245.414 1.958 1.453 1.958.713 0 1.312-.183 1.774-.713zm-6.499 7.027l.991-2.65c.944.461 2.189.737 3.387.737 1.406 0 2.121-.39 2.121-1.659v-.437c-.599.437-1.452.67-2.536.67-2.556 0-4.193-1.546-4.193-4.656V9.77c0-3.065 1.568-4.677 4.401-4.677 1.084 0 2.143.3 2.881.806l.437-.577H81.2V16.52c0 2.904-1.914 4.471-5.347 4.471-1.844 0-3.296-.345-4.655-1.06zm35.103-5.368c1.085 0 1.707-.76 1.684-2.212v-2.074c0-1.452-.599-2.212-1.683-2.212-1.082 0-1.659.76-1.659 2.212v2.074c-.023 1.452.577 2.212 1.659 2.212zm0-9.47c3.204 0 5.187 1.865 5.187 4.93v2.58c.022 3.066-1.983 4.932-5.186 4.932-3.202 0-5.16-1.866-5.16-4.932v-2.58c0-3.065 1.958-4.93 5.16-4.93zM129 9.286v8.018h-3.48V9.47c0-.945-.23-1.406-1.038-1.406-.783 0-1.383.577-1.727 1.06v8.18h-3.505V9.47c0-.83-.389-1.29-1.034-1.29-.647 0-1.247.415-1.73.99v8.134h-3.502V5.322h3.063l.256.991c.666-.692 1.82-1.22 2.947-1.22 1.2 0 2.122.437 2.697 1.45.898-.897 2.029-1.45 3.434-1.45 2.304 0 3.618 1.22 3.618 4.193z"
+              />
+              <path
+                className="logo-circle"
+                d="M86.993.004c2.09 0 3.79 1.7 3.79 3.788 0 2.091-1.7 3.792-3.79 3.792s-3.79-1.7-3.79-3.792c0-2.089 1.7-3.788 3.79-3.788zm0 2.186c-.883 0-1.604.719-1.604 1.602 0 .885.721 1.605 1.604 1.605a1.605 1.605 0 0 0 0-3.207z"
+              />
+              <path
+                className="logo-text"
+                d="M27.94 14.563c.992 0 2.092-.28 2.96-.746l.863 2.625c-1.1.657-2.62 1.093-4.077 1.093-3.11 0-4.93-1.89-4.93-4.955v-2.534c0-3.065 1.82-4.953 4.93-4.953 1.46 0 2.964.459 4.064 1.122l-.853 2.603c-.986-.507-1.976-.753-2.888-.753-1.175 0-1.75.783-1.75 2.234v2.052c0 1.451.46 2.212 1.682 2.212zm68.555 0c.991 0 2.091-.28 2.96-.746l.863 2.625c-1.1.658-2.62 1.093-4.077 1.093-3.109 0-4.93-1.89-4.93-4.954v-2.535c0-3.065 1.821-4.953 4.93-4.953 1.461 0 2.964.459 4.063 1.122l-.851 2.603c-.986-.506-1.977-.753-2.889-.753-1.174 0-1.75.784-1.75 2.234v2.052c0 1.452.461 2.212 1.681 2.212zm-88.5-9.242L5.9 12.602l-2.19-7.28H0l4.078 11.22-1.682 4.195h3.65l1.328-3.664 4.31-11.752z"
+              />
+            </svg>
+          </a>
+          <div>
+            <span
+              className="hamburger-label"
+            >
+              MENU
+            </span>
+            <button
+              className="hamburger hamburger--squeeze header-hamburger js-mobileNavigationToggle"
+              type="button"
+            >
+              <span
+                className="hamburger-box"
+              >
+                <span
+                  className="hamburger-inner header-hamburgerInner"
+                />
+              </span>
+            </button>
+          </div>
+        </div>
+        <nav
+          className="header-navigation js-mobileNavigation"
+        >
+          <ul
+            className="header-navigationList list--unstyled"
+          >
+            <li
+              className="header-navigationItem header-navigationItem--separator"
+            >
+              <a
+                className="btn btn--primary header-navigationLink"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Shortlist
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink js-modalBtn"
+                data-modal-id="modalSignUp"
+                href="#modalSignUp"
+                id="headerOpenSignUp"
+                onClick={[Function]}
+              >
+                Sign up
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink js-modalBtn"
+                data-modal-id="modalLogin"
+                href="#modalLogin"
+                id="headerOpenLogin"
+                onClick={[Function]}
+              >
+                Log in
+              </a>
+            </li>
+          </ul>
+          <ul
+            className="header-navigationList header-navigationList--main list--unstyled"
+          >
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Special Deals
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Boats rental
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Destinations
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      className="content"
+    >
+      <div
+        className="container"
+      >
+        Async config error: 
+        <strong>
+          nein!
+        </strong>
+      </div>
+    </main>
+    <footer
+      className="footer"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="footer-waves"
+        >
+          <div
+            className="waves"
+          >
+            <div
+              className="waves-water"
+            />
+            <svg
+              className="waves-icon"
+              fill="#000"
+              height="100%"
+              onClick={undefined}
+              style={undefined}
+              viewBox="0 0 15 23"
+              width="100%"
+            >
+              <path
+                d="M3.044 16.093A51.026 51.026 0 0 0 13.9 22.548l1.033.452-.108-1.123A50.479 50.479 0 0 0 8.038.971L7.467 0l-.571.97A50.475 50.475 0 0 0 .108 21.878L0 23l1.033-.452a51.08 51.08 0 0 0 4.661-2.33l.943-.532-.904-.598a52.208 52.208 0 0 1-2.888-2.057 46.7 46.7 0 0 0-.273 1.456c.503.375 1.013.74 1.527 1.097-.838.45-1.69.877-2.548 1.276A49.079 49.079 0 0 1 7.467 2.64a49.094 49.094 0 0 1 5.915 18.22 49.727 49.727 0 0 1-9.998-6.185c-.12.47-.234.942-.34 1.418z"
+              />
+            </svg>
+            <div
+              className="waves-water"
+            />
+          </div>
+          <div
+            className="waves"
+          >
+            <div
+              className="waves-water waves-water--left waves-water--single"
+            />
+          </div>
+        </div>
+        <div
+          className="footer-navigation"
+        >
+          <div
+            className="langSwitcher"
+            id="langSwitcherContainer"
+          />
+        </div>
+        <div
+          className="row socialBar"
+          id="socialBarContainer"
+        />
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                How can we help?
+              </h2>
+              <div
+                className="footer-phone"
+              >
+                <svg
+                  className="footer-phoneIcon"
+                  fill="#000"
+                  height="100%"
+                  onClick={undefined}
+                  style={undefined}
+                  viewBox="0 0 16 20"
+                  width="100%"
+                >
+                  <path
+                    d="M14.646 14.735a11.2 11.2 0 0 1-3.367-1.201c-.272-.148-.675-.122-1 .016l-2.511 1.714c-2.455-1.824-4.25-4.515-5.202-7.447l2.511-1.714c.343-.233.51-.597.37-.918-.095-1.102-.076-2.281.136-3.425.106-.573-.21-1.024-.788-1.129L1.418.021C.839-.086.383.226.277.798c-1.661 8.964 4.328 17.54 13.397 19.18.58.106 1.036-.206 1.142-.778l.618-3.338c.106-.572-.209-1.023-.788-1.128z"
+                  />
+                </svg>
+                <div
+                  className="footer-phoneNumber link--unstyled u-display-none u-display-lg-block"
+                >
+                  +420 271 913 506
+                </div>
+                <a
+                  className="footer-phoneNumber link--unstyled u-display-lg-none"
+                  href="tel:+420271913506"
+                >
+                  +420 271 913 506
+                </a>
+              </div>
+              <div
+                className="email"
+              >
+                <svg
+                  className="icon--baseline icon--left"
+                  fill="#000"
+                  height="100%"
+                  onClick={undefined}
+                  style={undefined}
+                  viewBox="0 0 13 13"
+                  width="100%"
+                >
+                  <path
+                    d="M8.048 7.353a2.197 2.197 0 0 0-1.526-.598c-.575 0-1.105.213-1.525.598l-.509.491-3.67-2.392a.536.536 0 0 0-.442-.065.43.43 0 0 0-.31.3.832.832 0 0 0-.066.32v5.874c0 .257.11.492.287.663a.53.53 0 0 0 .354.15.479.479 0 0 0 .354-.15s0-.022.022-.022l4.665-4.507c.221-.214.508-.32.818-.32.31 0 .597.106.818.32l3.98 3.845H2.896a.483.483 0 0 0-.486.47c0 .256.22.47.486.47h9.131a.987.987 0 0 0 .686-.278.922.922 0 0 0 .287-.662V6.007c0-.15-.044-.32-.11-.449a.97.97 0 0 0-.244-.277L7.65 1.2a1.787 1.787 0 0 0-2.255 0L1.636 4.255a.487.487 0 0 0-.066.684.529.529 0 0 0 .707.064l3.759-3.055c.287-.235.707-.235.973 0l4.2 3.397.53.427L9.75 7.075a.47.47 0 0 0-.133.662.508.508 0 0 0 .42.214.498.498 0 0 0 .288-.086l1.724-1.132v4.486L8.048 7.353zM3.78 8.528l-2.764 2.67V6.733L3.78 8.528z"
+                  />
+                </svg>
+                <a
+                  className="footer-link"
+                  href="mailto:help@yachting.com"
+                >
+                  help@yachting.com
+                </a>
+              </div>
+              <div
+                className="footer-copyright"
+              >
+                Copyright © 2005 – 2018. ZINDULKA, s.r.o.
+              </div>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Booking
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Geting and returning the boat
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Cancelation Policy
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Insurance
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Deposit insurance
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Sailing
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Picking the right boat
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Safety recomendations
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Tips for beginners
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Experienced Skippers
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Yachting.com
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Contacts
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Destinations
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="modalLoginContainer"
+    />
+    <div
+      id="modalSignUpContainer"
+    />
+    <div
+      id="modalResetPasswordContainer"
+    />
+    <div
+      id="modalChangePasswordContainer"
+    />
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "var JS_FEATURES_CONFIG = {\\"auth\\":{\\"localization\\":{\\"changePassword/button\\":\\"Save and log in\\",\\"changePassword/changePassword\\":\\"Change password\\",\\"changePassword/title\\":\\"Set your new password\\",\\"changePasswordSuccess/button\\":\\"Done\\",\\"changePasswordSuccess/message\\":\\"Please click on the link we’re sent you and set your new password. We’ll be here.\\",\\"changePasswordSuccess/title\\":\\"Reset link has been sent\\",\\"changePassword/error/mismatch\\":\\"Inputs has to match\\",\\"login/button\\":\\"Log in\\",\\"login/question\\":\\"Don’t have an account yet?\\",\\"login/questionLink\\":\\"Sign up\\",\\"login/resetPassword\\":\\"Reset password\\",\\"login/title\\":\\"Log in\\",\\"resetPassword/button\\":\\"Send reset link\\",\\"resetPassword/title\\":\\"Reset Password\\",\\"resetPassword/questionLink\\":\\"Log in\\",\\"resetPasswordSuccess/button\\":\\"Done\\",\\"resetPasswordSuccess/message\\":\\"Please click on the link we’re sent you and set your new password. We’ll be here.\\",\\"resetPasswordSuccess/title\\":\\"Reset link has been sent\\",\\"signUp/agreement\\":\\"I agree to the\\",\\"signUp/button\\":\\"Sign up\\",\\"signUp/question\\":\\"Already have an account?\\",\\"signUp/questionLink\\":\\"Log in\\",\\"signUp/termsAndConditions\\":\\"Terms & Conditions\\",\\"signUp/title\\":\\"Sign up\\",\\"signUpSuccess/button\\":\\"Done\\",\\"signUpSuccess/message\\":\\"Please check your email and activate your account, so we know it’s really you.\\",\\"signUpSuccess/title\\":\\"Ahoy! You’re signed up!\\",\\"form/email/label\\":\\"Email\\",\\"form/firstName/label\\":\\"First name\\",\\"form/lastName/label\\":\\"Last name\\",\\"form/password/help\\":\\"At least 6 characters\\",\\"form/password/label\\":\\"Password\\",\\"form/currentPassword/label\\":\\"Current password\\",\\"form/newPassword/label\\":\\"New password\\",\\"form/passwordConfirm/label\\":\\"Re-type password\\"}},\\"langSwitcher\\":{\\"localization\\":{\\"langSwitcher/label\\":\\"Language\\"},\\"languages\\":[{\\"label\\":\\"Česky\\",\\"link\\":\\"/cs\\",\\"selected\\":false},{\\"label\\":\\"English\\",\\"link\\":\\"/en\\",\\"selected\\":true},{\\"label\\":\\"Deutsch\\",\\"link\\":\\"/de\\",\\"selected\\":false},{\\"label\\":\\"Polski\\",\\"link\\":\\"/pl\\",\\"selected\\":false},{\\"label\\":\\"Slovensky\\",\\"link\\":\\"/sk\\",\\"selected\\":false}]},\\"socialBar\\":{\\"language\\":\\"cs_CZ\\",\\"localization\\":{\\"newsletter/title\\":\\"Stay up to date\\",\\"newsletter/description\\":\\"Sign up for our newsletter and we will inform you about the lates offers, news and events.\\",\\"newsletter/placeholder\\":\\"Your email\\",\\"newsletter/error/emailTooShort\\":\\"Please write in the password\\",\\"newsletter/button\\":\\"Subscribe\\",\\"social/title\\":\\"Follow us on social media\\"},\\"url\\":{\\"facebook\\":\\"https://www.facebook.com/zindulka.sailing/\\",\\"instagram\\":\\"https://www.instagram.com/yachtingcom/\\"}}}; var JS_FEATURES_INITIAL_STATE = {\\"auth\\":{\\"loggedIn\\":false}};",
+        }
+      }
+    />
+    <script
+      src="/public/dev/main.js"
+    />
+  </body>
+</html>
+`;
+
+exports[`page renders in development mode 1`] = `
+<html
+  lang="en"
+>
+  <head>
+    <meta
+      charSet="utf-8"
+    />
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    <title>
+      yachting°com
+    </title>
+    <link
+      href="/public/dev/main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header
+      className="header"
+    >
+      <div
+        className="header-container"
+      >
+        <div
+          className="header-navigationPanel"
+        >
+          <a
+            className="logo logo--white logo--orangeCircle"
+            href="/"
+          >
+            <svg
+              height="21"
+              viewBox="0 0 129 21"
+              width="129"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                className="logo-text"
+                d="M17.793 13.015v.692c-.392.668-1.084 1.152-1.868 1.152-.646 0-1.083-.322-1.083-1.037 0-.715.373-1.207 1.143-1.411.535-.142 1.195-.167 1.808-.087v.691zm-1.315-7.933c-1.576 0-2.98.414-4.046.975l.375 2.798c.892-.46 1.943-.798 3.118-.798 1.222 0 1.868.624 1.868 1.73v.368c-.832 0-1.815-.002-2.546.102-2.517.357-3.957 1.42-3.957 3.841 0 2.306 1.522 3.437 3.597 3.437 1.246 0 2.652-.577 3.251-1.337l.161 1.106h2.998V9.51c0-3.16-1.775-4.428-4.82-4.428zm26.725 4.365v7.857h-3.502V9.747c0-1.084-.369-1.567-1.36-1.567-.644 0-1.29.368-1.797.899v8.225h-3.502V.022h3.502v6.199c.622-.645 1.797-1.128 2.856-1.128 2.928 0 3.803 1.658 3.803 4.354zm8.947 7.604c-.691.322-1.75.484-2.511.484-3.065 0-4.032-1.29-4.032-4.355V8.087h-1.218V5.322h1.401l.554-2.281h2.765v2.281h2.903v2.765H49.11v4.84c0 1.22.3 1.682 1.244 1.682.485 0 .922-.07 1.291-.207l.507 2.65zm3.28-13.25c-1.175 0-1.958-.599-1.958-1.866C53.472.6 54.255 0 55.431 0c1.175 0 1.982.6 1.982 1.935 0 1.267-.807 1.866-1.982 1.866zm-1.727 1.521h3.503v11.982h-3.503zM69.45 9.447v7.857h-3.502V9.747c0-1.085-.347-1.567-1.337-1.567-.646 0-1.336.415-1.82 1.013v8.111h-3.503V5.322h3.064l.254.991c.691-.691 1.936-1.22 3.042-1.22 2.811 0 3.802 1.657 3.802 4.354zm8.246 3.457V8.479c-.553-.277-1.107-.368-1.66-.368-.967 0-1.567.484-1.567 1.796v1.752c0 1.245.414 1.958 1.453 1.958.713 0 1.312-.183 1.774-.713zm-6.499 7.027l.991-2.65c.944.461 2.189.737 3.387.737 1.406 0 2.121-.39 2.121-1.659v-.437c-.599.437-1.452.67-2.536.67-2.556 0-4.193-1.546-4.193-4.656V9.77c0-3.065 1.568-4.677 4.401-4.677 1.084 0 2.143.3 2.881.806l.437-.577H81.2V16.52c0 2.904-1.914 4.471-5.347 4.471-1.844 0-3.296-.345-4.655-1.06zm35.103-5.368c1.085 0 1.707-.76 1.684-2.212v-2.074c0-1.452-.599-2.212-1.683-2.212-1.082 0-1.659.76-1.659 2.212v2.074c-.023 1.452.577 2.212 1.659 2.212zm0-9.47c3.204 0 5.187 1.865 5.187 4.93v2.58c.022 3.066-1.983 4.932-5.186 4.932-3.202 0-5.16-1.866-5.16-4.932v-2.58c0-3.065 1.958-4.93 5.16-4.93zM129 9.286v8.018h-3.48V9.47c0-.945-.23-1.406-1.038-1.406-.783 0-1.383.577-1.727 1.06v8.18h-3.505V9.47c0-.83-.389-1.29-1.034-1.29-.647 0-1.247.415-1.73.99v8.134h-3.502V5.322h3.063l.256.991c.666-.692 1.82-1.22 2.947-1.22 1.2 0 2.122.437 2.697 1.45.898-.897 2.029-1.45 3.434-1.45 2.304 0 3.618 1.22 3.618 4.193z"
+              />
+              <path
+                className="logo-circle"
+                d="M86.993.004c2.09 0 3.79 1.7 3.79 3.788 0 2.091-1.7 3.792-3.79 3.792s-3.79-1.7-3.79-3.792c0-2.089 1.7-3.788 3.79-3.788zm0 2.186c-.883 0-1.604.719-1.604 1.602 0 .885.721 1.605 1.604 1.605a1.605 1.605 0 0 0 0-3.207z"
+              />
+              <path
+                className="logo-text"
+                d="M27.94 14.563c.992 0 2.092-.28 2.96-.746l.863 2.625c-1.1.657-2.62 1.093-4.077 1.093-3.11 0-4.93-1.89-4.93-4.955v-2.534c0-3.065 1.82-4.953 4.93-4.953 1.46 0 2.964.459 4.064 1.122l-.853 2.603c-.986-.507-1.976-.753-2.888-.753-1.175 0-1.75.783-1.75 2.234v2.052c0 1.451.46 2.212 1.682 2.212zm68.555 0c.991 0 2.091-.28 2.96-.746l.863 2.625c-1.1.658-2.62 1.093-4.077 1.093-3.109 0-4.93-1.89-4.93-4.954v-2.535c0-3.065 1.821-4.953 4.93-4.953 1.461 0 2.964.459 4.063 1.122l-.851 2.603c-.986-.506-1.977-.753-2.889-.753-1.174 0-1.75.784-1.75 2.234v2.052c0 1.452.461 2.212 1.681 2.212zm-88.5-9.242L5.9 12.602l-2.19-7.28H0l4.078 11.22-1.682 4.195h3.65l1.328-3.664 4.31-11.752z"
+              />
+            </svg>
+          </a>
+          <div>
+            <span
+              className="hamburger-label"
+            >
+              MENU
+            </span>
+            <button
+              className="hamburger hamburger--squeeze header-hamburger js-mobileNavigationToggle"
+              type="button"
+            >
+              <span
+                className="hamburger-box"
+              >
+                <span
+                  className="hamburger-inner header-hamburgerInner"
+                />
+              </span>
+            </button>
+          </div>
+        </div>
+        <nav
+          className="header-navigation js-mobileNavigation"
+        >
+          <ul
+            className="header-navigationList list--unstyled"
+          >
+            <li
+              className="header-navigationItem header-navigationItem--separator"
+            >
+              <a
+                className="btn btn--primary header-navigationLink"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Shortlist
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink js-modalBtn"
+                data-modal-id="modalSignUp"
+                href="#modalSignUp"
+                id="headerOpenSignUp"
+                onClick={[Function]}
+              >
+                Sign up
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink js-modalBtn"
+                data-modal-id="modalLogin"
+                href="#modalLogin"
+                id="headerOpenLogin"
+                onClick={[Function]}
+              >
+                Log in
+              </a>
+            </li>
+          </ul>
+          <ul
+            className="header-navigationList header-navigationList--main list--unstyled"
+          >
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Special Deals
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Boats rental
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Destinations
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      className="content"
+    >
+      <div
+        id="foo"
+      />
+    </main>
+    <footer
+      className="footer"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="footer-waves"
+        >
+          <div
+            className="waves"
+          >
+            <div
+              className="waves-water"
+            />
+            <svg
+              className="waves-icon"
+              fill="#000"
+              height="100%"
+              onClick={undefined}
+              style={undefined}
+              viewBox="0 0 15 23"
+              width="100%"
+            >
+              <path
+                d="M3.044 16.093A51.026 51.026 0 0 0 13.9 22.548l1.033.452-.108-1.123A50.479 50.479 0 0 0 8.038.971L7.467 0l-.571.97A50.475 50.475 0 0 0 .108 21.878L0 23l1.033-.452a51.08 51.08 0 0 0 4.661-2.33l.943-.532-.904-.598a52.208 52.208 0 0 1-2.888-2.057 46.7 46.7 0 0 0-.273 1.456c.503.375 1.013.74 1.527 1.097-.838.45-1.69.877-2.548 1.276A49.079 49.079 0 0 1 7.467 2.64a49.094 49.094 0 0 1 5.915 18.22 49.727 49.727 0 0 1-9.998-6.185c-.12.47-.234.942-.34 1.418z"
+              />
+            </svg>
+            <div
+              className="waves-water"
+            />
+          </div>
+          <div
+            className="waves"
+          >
+            <div
+              className="waves-water waves-water--left waves-water--single"
+            />
+          </div>
+        </div>
+        <div
+          className="footer-navigation"
+        >
+          <div
+            className="langSwitcher"
+            id="langSwitcherContainer"
+          />
+        </div>
+        <div
+          className="row socialBar"
+          id="socialBarContainer"
+        />
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                How can we help?
+              </h2>
+              <div
+                className="footer-phone"
+              >
+                <svg
+                  className="footer-phoneIcon"
+                  fill="#000"
+                  height="100%"
+                  onClick={undefined}
+                  style={undefined}
+                  viewBox="0 0 16 20"
+                  width="100%"
+                >
+                  <path
+                    d="M14.646 14.735a11.2 11.2 0 0 1-3.367-1.201c-.272-.148-.675-.122-1 .016l-2.511 1.714c-2.455-1.824-4.25-4.515-5.202-7.447l2.511-1.714c.343-.233.51-.597.37-.918-.095-1.102-.076-2.281.136-3.425.106-.573-.21-1.024-.788-1.129L1.418.021C.839-.086.383.226.277.798c-1.661 8.964 4.328 17.54 13.397 19.18.58.106 1.036-.206 1.142-.778l.618-3.338c.106-.572-.209-1.023-.788-1.128z"
+                  />
+                </svg>
+                <div
+                  className="footer-phoneNumber link--unstyled u-display-none u-display-lg-block"
+                >
+                  +420 271 913 506
+                </div>
+                <a
+                  className="footer-phoneNumber link--unstyled u-display-lg-none"
+                  href="tel:+420271913506"
+                >
+                  +420 271 913 506
+                </a>
+              </div>
+              <div
+                className="email"
+              >
+                <svg
+                  className="icon--baseline icon--left"
+                  fill="#000"
+                  height="100%"
+                  onClick={undefined}
+                  style={undefined}
+                  viewBox="0 0 13 13"
+                  width="100%"
+                >
+                  <path
+                    d="M8.048 7.353a2.197 2.197 0 0 0-1.526-.598c-.575 0-1.105.213-1.525.598l-.509.491-3.67-2.392a.536.536 0 0 0-.442-.065.43.43 0 0 0-.31.3.832.832 0 0 0-.066.32v5.874c0 .257.11.492.287.663a.53.53 0 0 0 .354.15.479.479 0 0 0 .354-.15s0-.022.022-.022l4.665-4.507c.221-.214.508-.32.818-.32.31 0 .597.106.818.32l3.98 3.845H2.896a.483.483 0 0 0-.486.47c0 .256.22.47.486.47h9.131a.987.987 0 0 0 .686-.278.922.922 0 0 0 .287-.662V6.007c0-.15-.044-.32-.11-.449a.97.97 0 0 0-.244-.277L7.65 1.2a1.787 1.787 0 0 0-2.255 0L1.636 4.255a.487.487 0 0 0-.066.684.529.529 0 0 0 .707.064l3.759-3.055c.287-.235.707-.235.973 0l4.2 3.397.53.427L9.75 7.075a.47.47 0 0 0-.133.662.508.508 0 0 0 .42.214.498.498 0 0 0 .288-.086l1.724-1.132v4.486L8.048 7.353zM3.78 8.528l-2.764 2.67V6.733L3.78 8.528z"
+                  />
+                </svg>
+                <a
+                  className="footer-link"
+                  href="mailto:help@yachting.com"
+                >
+                  help@yachting.com
+                </a>
+              </div>
+              <div
+                className="footer-copyright"
+              >
+                Copyright © 2005 – 2018. ZINDULKA, s.r.o.
+              </div>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Booking
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Geting and returning the boat
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Cancelation Policy
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Insurance
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Deposit insurance
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Sailing
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Picking the right boat
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Safety recomendations
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Tips for beginners
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Experienced Skippers
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Yachting.com
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Contacts
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Destinations
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="modalLoginContainer"
+    />
+    <div
+      id="modalSignUpContainer"
+    />
+    <div
+      id="modalResetPasswordContainer"
+    />
+    <div
+      id="modalChangePasswordContainer"
+    />
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "var JS_FEATURES_CONFIG = {\\"auth\\":{\\"localization\\":{\\"changePassword/button\\":\\"Save and log in\\",\\"changePassword/changePassword\\":\\"Change password\\",\\"changePassword/title\\":\\"Set your new password\\",\\"changePasswordSuccess/button\\":\\"Done\\",\\"changePasswordSuccess/message\\":\\"Please click on the link we’re sent you and set your new password. We’ll be here.\\",\\"changePasswordSuccess/title\\":\\"Reset link has been sent\\",\\"changePassword/error/mismatch\\":\\"Inputs has to match\\",\\"login/button\\":\\"Log in\\",\\"login/question\\":\\"Don’t have an account yet?\\",\\"login/questionLink\\":\\"Sign up\\",\\"login/resetPassword\\":\\"Reset password\\",\\"login/title\\":\\"Log in\\",\\"resetPassword/button\\":\\"Send reset link\\",\\"resetPassword/title\\":\\"Reset Password\\",\\"resetPassword/questionLink\\":\\"Log in\\",\\"resetPasswordSuccess/button\\":\\"Done\\",\\"resetPasswordSuccess/message\\":\\"Please click on the link we’re sent you and set your new password. We’ll be here.\\",\\"resetPasswordSuccess/title\\":\\"Reset link has been sent\\",\\"signUp/agreement\\":\\"I agree to the\\",\\"signUp/button\\":\\"Sign up\\",\\"signUp/question\\":\\"Already have an account?\\",\\"signUp/questionLink\\":\\"Log in\\",\\"signUp/termsAndConditions\\":\\"Terms & Conditions\\",\\"signUp/title\\":\\"Sign up\\",\\"signUpSuccess/button\\":\\"Done\\",\\"signUpSuccess/message\\":\\"Please check your email and activate your account, so we know it’s really you.\\",\\"signUpSuccess/title\\":\\"Ahoy! You’re signed up!\\",\\"form/email/label\\":\\"Email\\",\\"form/firstName/label\\":\\"First name\\",\\"form/lastName/label\\":\\"Last name\\",\\"form/password/help\\":\\"At least 6 characters\\",\\"form/password/label\\":\\"Password\\",\\"form/currentPassword/label\\":\\"Current password\\",\\"form/newPassword/label\\":\\"New password\\",\\"form/passwordConfirm/label\\":\\"Re-type password\\"}},\\"langSwitcher\\":{\\"localization\\":{\\"langSwitcher/label\\":\\"Language\\"},\\"languages\\":[{\\"label\\":\\"Česky\\",\\"link\\":\\"/cs\\",\\"selected\\":false},{\\"label\\":\\"English\\",\\"link\\":\\"/en\\",\\"selected\\":true},{\\"label\\":\\"Deutsch\\",\\"link\\":\\"/de\\",\\"selected\\":false},{\\"label\\":\\"Polski\\",\\"link\\":\\"/pl\\",\\"selected\\":false},{\\"label\\":\\"Slovensky\\",\\"link\\":\\"/sk\\",\\"selected\\":false}]},\\"socialBar\\":{\\"language\\":\\"cs_CZ\\",\\"localization\\":{\\"newsletter/title\\":\\"Stay up to date\\",\\"newsletter/description\\":\\"Sign up for our newsletter and we will inform you about the lates offers, news and events.\\",\\"newsletter/placeholder\\":\\"Your email\\",\\"newsletter/error/emailTooShort\\":\\"Please write in the password\\",\\"newsletter/button\\":\\"Subscribe\\",\\"social/title\\":\\"Follow us on social media\\"},\\"url\\":{\\"facebook\\":\\"https://www.facebook.com/zindulka.sailing/\\",\\"instagram\\":\\"https://www.instagram.com/yachtingcom/\\"}},\\"foo\\":\\"bar\\"}; var JS_FEATURES_INITIAL_STATE = {\\"auth\\":{\\"loggedIn\\":false}};",
+        }
+      }
+    />
+    <script
+      src="/public/dev/main.js"
+    />
+  </body>
+</html>
+`;
+
+exports[`page renders in production mode 1`] = `
+<html
+  lang="en"
+>
+  <head>
+    <meta
+      charSet="utf-8"
+    />
+    <meta
+      content="width=device-width, initial-scale=1"
+      name="viewport"
+    />
+    <title>
+      yachting°com
+    </title>
+    <link
+      href="/assets/main.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header
+      className="header"
+    >
+      <div
+        className="header-container"
+      >
+        <div
+          className="header-navigationPanel"
+        >
+          <a
+            className="logo logo--white logo--orangeCircle"
+            href="/"
+          >
+            <svg
+              height="21"
+              viewBox="0 0 129 21"
+              width="129"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                className="logo-text"
+                d="M17.793 13.015v.692c-.392.668-1.084 1.152-1.868 1.152-.646 0-1.083-.322-1.083-1.037 0-.715.373-1.207 1.143-1.411.535-.142 1.195-.167 1.808-.087v.691zm-1.315-7.933c-1.576 0-2.98.414-4.046.975l.375 2.798c.892-.46 1.943-.798 3.118-.798 1.222 0 1.868.624 1.868 1.73v.368c-.832 0-1.815-.002-2.546.102-2.517.357-3.957 1.42-3.957 3.841 0 2.306 1.522 3.437 3.597 3.437 1.246 0 2.652-.577 3.251-1.337l.161 1.106h2.998V9.51c0-3.16-1.775-4.428-4.82-4.428zm26.725 4.365v7.857h-3.502V9.747c0-1.084-.369-1.567-1.36-1.567-.644 0-1.29.368-1.797.899v8.225h-3.502V.022h3.502v6.199c.622-.645 1.797-1.128 2.856-1.128 2.928 0 3.803 1.658 3.803 4.354zm8.947 7.604c-.691.322-1.75.484-2.511.484-3.065 0-4.032-1.29-4.032-4.355V8.087h-1.218V5.322h1.401l.554-2.281h2.765v2.281h2.903v2.765H49.11v4.84c0 1.22.3 1.682 1.244 1.682.485 0 .922-.07 1.291-.207l.507 2.65zm3.28-13.25c-1.175 0-1.958-.599-1.958-1.866C53.472.6 54.255 0 55.431 0c1.175 0 1.982.6 1.982 1.935 0 1.267-.807 1.866-1.982 1.866zm-1.727 1.521h3.503v11.982h-3.503zM69.45 9.447v7.857h-3.502V9.747c0-1.085-.347-1.567-1.337-1.567-.646 0-1.336.415-1.82 1.013v8.111h-3.503V5.322h3.064l.254.991c.691-.691 1.936-1.22 3.042-1.22 2.811 0 3.802 1.657 3.802 4.354zm8.246 3.457V8.479c-.553-.277-1.107-.368-1.66-.368-.967 0-1.567.484-1.567 1.796v1.752c0 1.245.414 1.958 1.453 1.958.713 0 1.312-.183 1.774-.713zm-6.499 7.027l.991-2.65c.944.461 2.189.737 3.387.737 1.406 0 2.121-.39 2.121-1.659v-.437c-.599.437-1.452.67-2.536.67-2.556 0-4.193-1.546-4.193-4.656V9.77c0-3.065 1.568-4.677 4.401-4.677 1.084 0 2.143.3 2.881.806l.437-.577H81.2V16.52c0 2.904-1.914 4.471-5.347 4.471-1.844 0-3.296-.345-4.655-1.06zm35.103-5.368c1.085 0 1.707-.76 1.684-2.212v-2.074c0-1.452-.599-2.212-1.683-2.212-1.082 0-1.659.76-1.659 2.212v2.074c-.023 1.452.577 2.212 1.659 2.212zm0-9.47c3.204 0 5.187 1.865 5.187 4.93v2.58c.022 3.066-1.983 4.932-5.186 4.932-3.202 0-5.16-1.866-5.16-4.932v-2.58c0-3.065 1.958-4.93 5.16-4.93zM129 9.286v8.018h-3.48V9.47c0-.945-.23-1.406-1.038-1.406-.783 0-1.383.577-1.727 1.06v8.18h-3.505V9.47c0-.83-.389-1.29-1.034-1.29-.647 0-1.247.415-1.73.99v8.134h-3.502V5.322h3.063l.256.991c.666-.692 1.82-1.22 2.947-1.22 1.2 0 2.122.437 2.697 1.45.898-.897 2.029-1.45 3.434-1.45 2.304 0 3.618 1.22 3.618 4.193z"
+              />
+              <path
+                className="logo-circle"
+                d="M86.993.004c2.09 0 3.79 1.7 3.79 3.788 0 2.091-1.7 3.792-3.79 3.792s-3.79-1.7-3.79-3.792c0-2.089 1.7-3.788 3.79-3.788zm0 2.186c-.883 0-1.604.719-1.604 1.602 0 .885.721 1.605 1.604 1.605a1.605 1.605 0 0 0 0-3.207z"
+              />
+              <path
+                className="logo-text"
+                d="M27.94 14.563c.992 0 2.092-.28 2.96-.746l.863 2.625c-1.1.657-2.62 1.093-4.077 1.093-3.11 0-4.93-1.89-4.93-4.955v-2.534c0-3.065 1.82-4.953 4.93-4.953 1.46 0 2.964.459 4.064 1.122l-.853 2.603c-.986-.507-1.976-.753-2.888-.753-1.175 0-1.75.783-1.75 2.234v2.052c0 1.451.46 2.212 1.682 2.212zm68.555 0c.991 0 2.091-.28 2.96-.746l.863 2.625c-1.1.658-2.62 1.093-4.077 1.093-3.109 0-4.93-1.89-4.93-4.954v-2.535c0-3.065 1.821-4.953 4.93-4.953 1.461 0 2.964.459 4.063 1.122l-.851 2.603c-.986-.506-1.977-.753-2.889-.753-1.174 0-1.75.784-1.75 2.234v2.052c0 1.452.461 2.212 1.681 2.212zm-88.5-9.242L5.9 12.602l-2.19-7.28H0l4.078 11.22-1.682 4.195h3.65l1.328-3.664 4.31-11.752z"
+              />
+            </svg>
+          </a>
+          <div>
+            <span
+              className="hamburger-label"
+            >
+              MENU
+            </span>
+            <button
+              className="hamburger hamburger--squeeze header-hamburger js-mobileNavigationToggle"
+              type="button"
+            >
+              <span
+                className="hamburger-box"
+              >
+                <span
+                  className="hamburger-inner header-hamburgerInner"
+                />
+              </span>
+            </button>
+          </div>
+        </div>
+        <nav
+          className="header-navigation js-mobileNavigation"
+        >
+          <ul
+            className="header-navigationList list--unstyled"
+          >
+            <li
+              className="header-navigationItem header-navigationItem--separator"
+            >
+              <a
+                className="btn btn--primary header-navigationLink"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Shortlist
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink js-modalBtn"
+                data-modal-id="modalSignUp"
+                href="#modalSignUp"
+                id="headerOpenSignUp"
+                onClick={[Function]}
+              >
+                Sign up
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink js-modalBtn"
+                data-modal-id="modalLogin"
+                href="#modalLogin"
+                id="headerOpenLogin"
+                onClick={[Function]}
+              >
+                Log in
+              </a>
+            </li>
+          </ul>
+          <ul
+            className="header-navigationList header-navigationList--main list--unstyled"
+          >
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Special Deals
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Boats rental
+              </a>
+            </li>
+            <li
+              className="header-navigationItem"
+            >
+              <a
+                className="btn btn--primary header-navigationLink header-navigationLink--main"
+                href="#"
+                id={undefined}
+                onClick={[Function]}
+              >
+                Destinations
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main
+      className="content"
+    >
+      <div
+        id="foo"
+      />
+    </main>
+    <footer
+      className="footer"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="footer-waves"
+        >
+          <div
+            className="waves"
+          >
+            <div
+              className="waves-water"
+            />
+            <svg
+              className="waves-icon"
+              fill="#000"
+              height="100%"
+              onClick={undefined}
+              style={undefined}
+              viewBox="0 0 15 23"
+              width="100%"
+            >
+              <path
+                d="M3.044 16.093A51.026 51.026 0 0 0 13.9 22.548l1.033.452-.108-1.123A50.479 50.479 0 0 0 8.038.971L7.467 0l-.571.97A50.475 50.475 0 0 0 .108 21.878L0 23l1.033-.452a51.08 51.08 0 0 0 4.661-2.33l.943-.532-.904-.598a52.208 52.208 0 0 1-2.888-2.057 46.7 46.7 0 0 0-.273 1.456c.503.375 1.013.74 1.527 1.097-.838.45-1.69.877-2.548 1.276A49.079 49.079 0 0 1 7.467 2.64a49.094 49.094 0 0 1 5.915 18.22 49.727 49.727 0 0 1-9.998-6.185c-.12.47-.234.942-.34 1.418z"
+              />
+            </svg>
+            <div
+              className="waves-water"
+            />
+          </div>
+          <div
+            className="waves"
+          >
+            <div
+              className="waves-water waves-water--left waves-water--single"
+            />
+          </div>
+        </div>
+        <div
+          className="footer-navigation"
+        >
+          <div
+            className="langSwitcher"
+            id="langSwitcherContainer"
+          />
+        </div>
+        <div
+          className="row socialBar"
+          id="socialBarContainer"
+        />
+        <div
+          className="row"
+        >
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                How can we help?
+              </h2>
+              <div
+                className="footer-phone"
+              >
+                <svg
+                  className="footer-phoneIcon"
+                  fill="#000"
+                  height="100%"
+                  onClick={undefined}
+                  style={undefined}
+                  viewBox="0 0 16 20"
+                  width="100%"
+                >
+                  <path
+                    d="M14.646 14.735a11.2 11.2 0 0 1-3.367-1.201c-.272-.148-.675-.122-1 .016l-2.511 1.714c-2.455-1.824-4.25-4.515-5.202-7.447l2.511-1.714c.343-.233.51-.597.37-.918-.095-1.102-.076-2.281.136-3.425.106-.573-.21-1.024-.788-1.129L1.418.021C.839-.086.383.226.277.798c-1.661 8.964 4.328 17.54 13.397 19.18.58.106 1.036-.206 1.142-.778l.618-3.338c.106-.572-.209-1.023-.788-1.128z"
+                  />
+                </svg>
+                <div
+                  className="footer-phoneNumber link--unstyled u-display-none u-display-lg-block"
+                >
+                  +420 271 913 506
+                </div>
+                <a
+                  className="footer-phoneNumber link--unstyled u-display-lg-none"
+                  href="tel:+420271913506"
+                >
+                  +420 271 913 506
+                </a>
+              </div>
+              <div
+                className="email"
+              >
+                <svg
+                  className="icon--baseline icon--left"
+                  fill="#000"
+                  height="100%"
+                  onClick={undefined}
+                  style={undefined}
+                  viewBox="0 0 13 13"
+                  width="100%"
+                >
+                  <path
+                    d="M8.048 7.353a2.197 2.197 0 0 0-1.526-.598c-.575 0-1.105.213-1.525.598l-.509.491-3.67-2.392a.536.536 0 0 0-.442-.065.43.43 0 0 0-.31.3.832.832 0 0 0-.066.32v5.874c0 .257.11.492.287.663a.53.53 0 0 0 .354.15.479.479 0 0 0 .354-.15s0-.022.022-.022l4.665-4.507c.221-.214.508-.32.818-.32.31 0 .597.106.818.32l3.98 3.845H2.896a.483.483 0 0 0-.486.47c0 .256.22.47.486.47h9.131a.987.987 0 0 0 .686-.278.922.922 0 0 0 .287-.662V6.007c0-.15-.044-.32-.11-.449a.97.97 0 0 0-.244-.277L7.65 1.2a1.787 1.787 0 0 0-2.255 0L1.636 4.255a.487.487 0 0 0-.066.684.529.529 0 0 0 .707.064l3.759-3.055c.287-.235.707-.235.973 0l4.2 3.397.53.427L9.75 7.075a.47.47 0 0 0-.133.662.508.508 0 0 0 .42.214.498.498 0 0 0 .288-.086l1.724-1.132v4.486L8.048 7.353zM3.78 8.528l-2.764 2.67V6.733L3.78 8.528z"
+                  />
+                </svg>
+                <a
+                  className="footer-link"
+                  href="mailto:help@yachting.com"
+                >
+                  help@yachting.com
+                </a>
+              </div>
+              <div
+                className="footer-copyright"
+              >
+                Copyright © 2005 – 2018. ZINDULKA, s.r.o.
+              </div>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Booking
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Geting and returning the boat
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Cancelation Policy
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Insurance
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Deposit insurance
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Sailing
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Picking the right boat
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Safety recomendations
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Tips for beginners
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Experienced Skippers
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+          <div
+            className="col-sm-6 col-lg-3"
+          >
+            <section
+              className="footer-section"
+            >
+              <h2
+                className="footer-heading"
+              >
+                Yachting.com
+              </h2>
+              <nav>
+                <ul
+                  className="list--unstyled"
+                >
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Contacts
+                    </a>
+                  </li>
+                  <li
+                    className="footer-listItem"
+                  >
+                    <a
+                      className="footer-link"
+                      href="#"
+                    >
+                      Destinations
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      id="modalLoginContainer"
+    />
+    <div
+      id="modalSignUpContainer"
+    />
+    <div
+      id="modalResetPasswordContainer"
+    />
+    <div
+      id="modalChangePasswordContainer"
+    />
+    <script
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "var JS_FEATURES_CONFIG = {\\"auth\\":{\\"localization\\":{\\"changePassword/button\\":\\"Save and log in\\",\\"changePassword/changePassword\\":\\"Change password\\",\\"changePassword/title\\":\\"Set your new password\\",\\"changePasswordSuccess/button\\":\\"Done\\",\\"changePasswordSuccess/message\\":\\"Please click on the link we’re sent you and set your new password. We’ll be here.\\",\\"changePasswordSuccess/title\\":\\"Reset link has been sent\\",\\"changePassword/error/mismatch\\":\\"Inputs has to match\\",\\"login/button\\":\\"Log in\\",\\"login/question\\":\\"Don’t have an account yet?\\",\\"login/questionLink\\":\\"Sign up\\",\\"login/resetPassword\\":\\"Reset password\\",\\"login/title\\":\\"Log in\\",\\"resetPassword/button\\":\\"Send reset link\\",\\"resetPassword/title\\":\\"Reset Password\\",\\"resetPassword/questionLink\\":\\"Log in\\",\\"resetPasswordSuccess/button\\":\\"Done\\",\\"resetPasswordSuccess/message\\":\\"Please click on the link we’re sent you and set your new password. We’ll be here.\\",\\"resetPasswordSuccess/title\\":\\"Reset link has been sent\\",\\"signUp/agreement\\":\\"I agree to the\\",\\"signUp/button\\":\\"Sign up\\",\\"signUp/question\\":\\"Already have an account?\\",\\"signUp/questionLink\\":\\"Log in\\",\\"signUp/termsAndConditions\\":\\"Terms & Conditions\\",\\"signUp/title\\":\\"Sign up\\",\\"signUpSuccess/button\\":\\"Done\\",\\"signUpSuccess/message\\":\\"Please check your email and activate your account, so we know it’s really you.\\",\\"signUpSuccess/title\\":\\"Ahoy! You’re signed up!\\",\\"form/email/label\\":\\"Email\\",\\"form/firstName/label\\":\\"First name\\",\\"form/lastName/label\\":\\"Last name\\",\\"form/password/help\\":\\"At least 6 characters\\",\\"form/password/label\\":\\"Password\\",\\"form/currentPassword/label\\":\\"Current password\\",\\"form/newPassword/label\\":\\"New password\\",\\"form/passwordConfirm/label\\":\\"Re-type password\\"}},\\"langSwitcher\\":{\\"localization\\":{\\"langSwitcher/label\\":\\"Language\\"},\\"languages\\":[{\\"label\\":\\"Česky\\",\\"link\\":\\"/cs\\",\\"selected\\":false},{\\"label\\":\\"English\\",\\"link\\":\\"/en\\",\\"selected\\":true},{\\"label\\":\\"Deutsch\\",\\"link\\":\\"/de\\",\\"selected\\":false},{\\"label\\":\\"Polski\\",\\"link\\":\\"/pl\\",\\"selected\\":false},{\\"label\\":\\"Slovensky\\",\\"link\\":\\"/sk\\",\\"selected\\":false}]},\\"socialBar\\":{\\"language\\":\\"cs_CZ\\",\\"localization\\":{\\"newsletter/title\\":\\"Stay up to date\\",\\"newsletter/description\\":\\"Sign up for our newsletter and we will inform you about the lates offers, news and events.\\",\\"newsletter/placeholder\\":\\"Your email\\",\\"newsletter/error/emailTooShort\\":\\"Please write in the password\\",\\"newsletter/button\\":\\"Subscribe\\",\\"social/title\\":\\"Follow us on social media\\"},\\"url\\":{\\"facebook\\":\\"https://www.facebook.com/zindulka.sailing/\\",\\"instagram\\":\\"https://www.instagram.com/yachtingcom/\\"}},\\"foo\\":\\"bar\\"}; var JS_FEATURES_INITIAL_STATE = {\\"auth\\":{\\"loggedIn\\":false}};",
+        }
+      }
+    />
+    <script
+      src="/assets/main.js"
+    />
+  </body>
+</html>
+`;

@@ -1,0 +1,29 @@
+//
+// Position
+//
+
+// Sass list not in variables since it's not intended for customization
+$positions: static, relative, absolute, fixed;
+
+// Generate position classes for each item in $positions list
+@each $position in $positions {
+  .u-position-#{$position} {
+    position: $position !important;
+  }
+}
+
+.u-fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $z-index-fixed;
+}
+
+.u-fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-index-fixed;
+}

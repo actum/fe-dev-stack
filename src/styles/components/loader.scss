@@ -1,0 +1,19 @@
+$loader-size: 2rem;
+$loader-color: $color-primary;
+$loader-border-width: 8px;
+
+.loading-container {
+  position: relative;
+
+  &.is-loading {
+    padding: rem(48);
+
+    &::before {
+      @include overlay(rgba($white, .5));
+    }
+
+    &::after {
+      @include loading-circle($loader-size, $loader-border-width, $loader-color);
+    }
+  }
+}

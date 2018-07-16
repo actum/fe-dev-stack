@@ -1,0 +1,18 @@
+//
+// Overlay
+//
+
+/**
+* Create an overlay over an element
+* @param {Color} background - Background color of the overlay
+*/
+@mixin overlay($background) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $background;
+  content: '';
+  z-index: $z-index-base;
+}

@@ -1,0 +1,8 @@
+<mj-section>
+
+  <mj-column>
+    <mj-image padding="0" align="left" width="140" height="22" src="http://placehold.it/140x22"></mj-image>
+    <mj-divider padding="40px 0" />
+  </mj-column>
+
+</mj-section>

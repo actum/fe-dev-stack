@@ -1,0 +1,188 @@
+//
+// Noty
+//
+
+// Variables
+
+$noty-icon-size: rem(20);
+$noty-icon-margin-top: rem(2);
+$noty-icon-margin-right: rem(8);
+$noty-color: rgba(0, 0, 0, .7);
+
+// Generate noty icon name based on type of the message
+
+@function getNotyIcon($type) {
+  @if ($type == 'error') {
+    @return 'cross';
+  }
+
+  @else if ($type == 'success') {
+    @return 'tick';
+  }
+
+  @else if ($type == 'info') {
+    @return 'info';
+  }
+
+  @else {
+    @return '';
+  }
+}
+
+// Generate noty themes
+
+@mixin noty-theme($color, $type) {
+  $text-color: darken($color, 10%);
+  background-color: $color;
+
+  .noty_body {
+    &::before {
+      @include size($noty-icon-size);
+      display: block;
+      flex: none;
+      margin-top: $noty-icon-margin-top;
+      margin-right: $noty-icon-margin-right;
+      background:
+        svg-load(
+          '../assets/svg/icon-#{getNotyIcon($type)}-circle.svg',
+          height=$noty-icon-size,
+          width=$noty-icon-size,
+          fill=$noty-color
+        )
+        center no-repeat;
+      background-size: $noty-icon-size;
+      content: '';
+    }
+  }
+}
+
+// Core styles
+
+.noty {
+  &_layout {
+    position: fixed;
+    z-index: $z-index-modal;
+    max-width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+
+  &_bar {
+    position: relative;
+    padding: $grid-gutter-width;
+    margin-bottom: rem(8);
+    line-height: 1.3125;
+    color: $noty-color;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .13);
+  }
+
+  &_body {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_buttons {
+    $buttons-padding-left: $noty-icon-size + $noty-icon-margin-right;
+    padding-left: $buttons-padding-left;
+    margin-top: $grid-gutter-width;
+  }
+
+  &_type {
+    color: $black;
+
+    @each $type, $color in $alert-colors {
+      &__#{$type} {
+        @include noty-theme($color, $type);
+      }
+    }
+  }
+
+  &_close_button {
+    $close-btn-space: rem(2);
+    $close-btn-size: rem(20);
+
+    @include size($close-btn-size);
+    position: absolute;
+    top: $close-btn-space;
+    right: $close-btn-space;
+    font-size: $close-btn-size;
+    font-weight: $font-weight-bold;
+    line-height: $close-btn-size;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .05);
+    transition: background-color .2s ease-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .1);
+    }
+  }
+
+  &_close_with_click {
+    cursor: pointer;
+  }
+
+  &_progressbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    opacity: .15;
+  }
+
+  &_has_timeout.noty_has_progressbar .noty_progressbar {
+    display: block;
+  }
+
+  &_effects_open {
+    opacity: 0;
+    transform: translateY(-50%);
+    animation: noty_anim_in .5s cubic-bezier(.68, -.55, .265, 1.55);
+    animation-fill-mode: forwards;
+  }
+
+  &_effects_close {
+    animation: noty_anim_out .5s cubic-bezier(.68, -.55, .265, 1.55);
+    animation-fill-mode: forwards;
+  }
+
+  &_fix_effects_height {
+    animation: noty_anim_height 75ms ease-out;
+  }
+}
+
+// Layout variants
+
+#noty_layout {
+  &__topRight {
+    top: $grid-gutter-width;
+    right: $grid-gutter-width;
+    width: rem(288);
+  }
+}
+
+// Animations
+
+@keyframes noty_anim_in {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes noty_anim_out {
+  100% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes noty_anim_height {
+  100% {
+    height: 0;
+  }
+}

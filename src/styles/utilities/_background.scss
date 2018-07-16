@@ -1,0 +1,10 @@
+//
+// Background
+//
+
+// Generate background colors for each item in $colors map
+@each $color, $value in $utils-colors {
+  .u-bg-#{$color} {
+    background-color: $value !important;
+  }
+}

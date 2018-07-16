@@ -1,0 +1,39 @@
+//
+// Spacing
+//
+
+/**
+* Set the top and bottom margin
+* @param {Unit} size - Margin to be set
+*/
+@mixin margin-vertical($size) {
+  margin-top: $size;
+  margin-bottom: $size;
+}
+
+/**
+* Set the left and right margin
+* @param {Unit} size - Margin to be set
+*/
+@mixin margin-horizontal($size) {
+  margin-right: $size;
+  margin-left: $size;
+}
+
+/**
+* Set the top and bottom padding
+* @param {Unit} size - Margin to be set
+*/
+@mixin padding-vertical($size) {
+  padding-top: $size;
+  padding-bottom: $size;
+}
+
+/**
+* Set the left and right padding
+* @param {Unit} size - Margin to be set
+*/
+@mixin padding-horizontal($size) {
+  padding-right: $size;
+  padding-left: $size;
+}

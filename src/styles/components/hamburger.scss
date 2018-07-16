@@ -1,0 +1,50 @@
+// Hamburger default variables
+$hamburger-padding-x: rem(8);
+$hamburger-padding-y: rem(8);
+$hamburger-layer-width: 16px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 3px;
+$hamburger-layer-color: $white;
+$hamburger-layer-border-radius: 100px;
+
+$hamburger-types: (squeeze);
+
+@import '../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+
+// Hamburger custom variables
+$hamburger-bg-color: $white;
+
+.hamburger {
+  margin-left: rem(8);
+  border: 1px solid $gray-darker;
+  border-radius: 4px;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+
+  &-box {
+    // Overwrite display: inline-block property to have proper height
+    display: block;
+  }
+
+  &-inner {
+    .is-active & {
+      background-color: $hamburger-bg-color;
+
+      &::before,
+      &::after {
+        background-color: inherit;
+      }
+    }
+  }
+
+  &-label {
+    font-size: $font-size-sm;
+    color: $white;
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+}

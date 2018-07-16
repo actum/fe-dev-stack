@@ -1,0 +1,114 @@
+//
+// Typography
+//
+
+// Fonts
+
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+@font-face {
+  font-family: 'DarwinPro';
+  src: url('../assets/fonts/DarwinPro-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'DarwinPro';
+  src: url('../assets/fonts/DarwinPro-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: $font-weight-semibold;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'DarwinPro';
+  src: url('../assets/fonts/DarwinPro-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  text-rendering: optimizeLegibility;
+}
+
+$font-family-base: DarwinPro, Helvetica, Arial, sans-serif;
+$font-size-xs: rem(10);
+$font-size-sm: rem(13);
+$font-size-md: rem(14);
+$font-size-base: rem(16);
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5625;
+$line-height-sm: 1.2;
+$text-margin-bottom-base: 1.5em;
+
+// Body
+
+$body-font-family: $font-family-base;
+$body-bg: $white;
+$body-color: $black;
+
+// Headings
+
+$headings-font-family: $font-family-base;
+$headings-color: $black;
+$headings-line-height-base: 1.1875;
+$headings-line-height-md: $line-height-sm;
+$headings-margin-bottom-base: 1em;
+$h1-font-size: rem(32);
+$h2-font-size: rem(24);
+$h3-font-size: rem(18);
+
+$headings: (
+  h1:
+  (
+    'font-size': $h1-font-size,
+    'font-weight': $font-weight-bold,
+    'line-height': $headings-line-height-base,
+    'margin-bottom': $headings-margin-bottom-base,
+    'color': $headings-color
+  ),
+  h2:
+  (
+    'font-size': $h2-font-size,
+    'font-weight': $font-weight-semibold,
+    'line-height': $headings-line-height-md,
+    'margin-bottom': $headings-margin-bottom-base,
+    'color': $headings-color
+  ),
+  h3:
+  (
+    'font-size': $h3-font-size,
+    'font-weight': $font-weight-semibold,
+    'line-height': $headings-line-height-md,
+    'margin-bottom': $headings-margin-bottom-base,
+    'color': $headings-color
+  )
+);
+
+// Paragraphs
+
+$paragraph-margin-bottom: $text-margin-bottom-base;
+
+// Links
+
+$link-font-weight: $font-weight-normal;
+$link-color: $color-primary;
+$link-decoration: underline;
+$link-hover-color: darken($color-primary, 10%);
+$link-hover-decoration: none;
+$link-active-color: darken($color-primary, 10%);
+
+// Horizontal separator
+
+$hr-border-width: 1px;
+$hr-border-style: solid;
+$hr-border-color: $black;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 150;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+
+$yiq-text-dark: $color-primary;
+$yiq-text-light: $white;

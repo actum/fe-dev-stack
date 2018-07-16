@@ -1,0 +1,79 @@
+//
+// Text
+//
+
+// Colors
+
+// Generate text colors for each item in $colors map
+@each $color, $value in $utils-colors {
+  .u-text-#{$color} {
+    color: $value !important;
+  }
+}
+
+// Alignments
+
+.u-text-justify {
+  text-align: justify !important;
+}
+
+.u-text-nowrap {
+  white-space: nowrap !important;
+}
+
+.u-text-truncate {
+  @include text-truncate;
+}
+
+// Responsive alignments
+
+// Generate text alignment classes for each breakpoint
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint);
+
+    .u-text#{$infix}-left {
+      text-align: left !important;
+    }
+
+    .u-text#{$infix}-right {
+      text-align: right !important;
+    }
+
+    .u-text#{$infix}-center {
+      text-align: center !important;
+    }
+  }
+}
+
+// Transformations
+
+.u-text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.u-text-capitalize {
+  text-transform: capitalize !important;
+}
+
+// Weights and italics
+
+.u-fontWeight-normal {
+  font-weight: $font-weight-normal !important;
+}
+
+.u-fontWeight-semibold {
+  font-weight: $font-weight-semibold !important;
+}
+
+.u-fontWeight-bold {
+  font-weight: $font-weight-bold !important;
+}
+
+.u-font-italic {
+  font-style: italic !important;
+}

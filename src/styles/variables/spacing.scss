@@ -1,0 +1,41 @@
+//
+// Spacing
+//
+
+// General
+
+// TODO: Define when it will be decided
+// $gutter-element: rem(15);
+// $gutter-element-lg: rem(30);
+// $gutter-component: rem(25);
+// $gutter-component-lg: rem(50);
+// $gutter-section: rem(35);
+// $gutter-section-lg: rem(70);
+
+// Grid
+
+$grid-columns: 12;
+$grid-gutter-width: rem(16);
+
+$spacer: .5rem;
+$spacers: (
+  half: .5,
+  0: 0,
+  1: ($spacer * 1),
+  2: ($spacer * 2),
+  3: ($spacer * 3),
+  4: ($spacer * 4),
+  5: ($spacer * 5),
+  6: ($spacer * 6),
+  7: ($spacer * 7),
+  8: ($spacer * 8),
+  9: ($spacer * 9)
+);
+
+// Used for generating sizing classes like `.u-h-*` and `.u-w-*`.
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+);

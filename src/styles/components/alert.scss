@@ -1,0 +1,19 @@
+.alert {
+  padding: rem(16) rem(24);
+  margin-bottom: rem(16);
+  font-size: $font-size-md;
+  color: rgba(0, 0, 0, .7);
+  text-align: center;
+  border-radius: $border-radius;
+
+  @include media-breakpoint-up(lg) {
+    display: inline-block;
+    min-width: rem(360);
+  }
+
+  @each $type, $color in $alert-colors {
+    &--#{$type} {
+      background-color: $color;
+    }
+  }
+}

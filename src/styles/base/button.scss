@@ -1,0 +1,175 @@
+//
+// Button
+//
+
+// Variables
+
+$btn-padding-x: rem(40);
+$btn-padding-y: rem(10);
+$btn-font-size: $font-size-base;
+
+$btn-padding-x-sm: rem(24);
+$btn-padding-y-sm: rem(6);
+$btn-font-size-sm: $font-size-md;
+
+$btn-border-radius: $border-radius;
+
+$btn-border-width: 0;
+$btn-border-style: solid;
+$btn-border-color: $transparent;
+
+$btn-line-height: 1.1875;
+$btn-font-weight: $font-weight-normal;
+
+$btn-transition-property: color, background-color, border, box-shadow;
+$btn-transition-easing: $easing;
+$btn-transition-duration: $duration-shortest;
+
+$btn-disabled-color: rgba($color-disabled, .5);
+$btn-disabled-border-color: $transparent;
+
+$btn-loader-size: 2rem;
+$btn-loader-color: $color-primary;
+$btn-loader-border-width: 8px;
+
+$btn-link-color: $color-secondary;
+
+$button-variants: (
+  primary:
+  (
+    default: $color-primary,
+    hover: darken($color-primary, 10%),
+    active: darken($color-primary, 10%)
+  ),
+  secondary:
+  (
+    default: $color-secondary,
+    hover: darken($color-secondary, 10%),
+    active: darken($color-secondary, 10%)
+  ),
+);
+
+$btn-ghost-bg-color: $transparent;
+$btn-ghost-border: 1px solid rgba(0, 0, 0, .3);
+$btn-ghost-color: rgba(0, 0, 0, .7);
+$btn-ghost-border-color-hover: rgba(0, 0, 0, .7);
+
+// Generate button variants
+
+@each $type, $states in $button-variants {
+  .btn--#{$type} {
+    @include button-variant($type, $states);
+  }
+}
+
+// Core styles
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: $btn-padding-y $btn-padding-x;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: $btn-border-width $btn-border-style $btn-border-color;
+  border-radius: $btn-border-radius;
+  transition-property: $btn-transition-property;
+  transition-duration: $btn-transition-duration;
+  transition-timing-function: $btn-transition-easing;
+  user-select: none;
+
+  @include media-breakpoint-up(md) {
+    width: auto;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:disabled:not(.is-loading) {
+    color: $gray-base;
+    background-color: $btn-disabled-color;
+    border-color: $btn-disabled-border-color;
+  }
+
+  &:focus:not(:disabled),
+  &:hover:not(:disabled) {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &:active:not(:disabled):not(.btn--unstyled) {
+    top: 1px;
+  }
+
+  &.is-loading {
+    &,
+    &:hover {
+      color: $transparent;
+    }
+
+    &::after {
+      @include loading-circle(
+        $btn-loader-size,
+        $btn-loader-border-width,
+        $btn-loader-color
+      );
+    }
+  }
+
+  &--small {
+    padding: $btn-padding-y-sm $btn-padding-x-sm;
+    font-size: $btn-font-size-sm;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+  &--unstyled,
+  &--link {
+    width: auto;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  &--link {
+    font-size: $font-size-md;
+    color: $btn-link-color;
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      text-decoration: underline;
+    }
+  }
+
+  &--linkInverse {
+    text-decoration: underline;
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      text-decoration: none;
+    }
+  }
+
+  &--ghost {
+    color: $btn-ghost-color;
+    background-color: $btn-ghost-bg-color;
+    border: $btn-ghost-border;
+
+    &:hover {
+      border-color: $btn-ghost-border-color-hover;
+    }
+  }
+}

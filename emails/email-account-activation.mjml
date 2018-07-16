@@ -1,0 +1,43 @@
+<mjml>
+
+  <mj-include path="./components/head.mjml" />
+
+  <mj-body background-color="#fff">
+
+    <mj-include path="./components/header.mjml" />
+
+    <mj-section>
+
+      <mj-column>
+        <mj-text mj-class="h1">
+          Account activation
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+    <mj-section>
+
+      <mj-column>
+        <mj-text>
+          Good afternoon Peter, <br></br>thanks for signing up on Yachting.com. Please confirm your email by clicking on the button below:
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+
+    <mj-section>
+
+      <mj-column>
+        <mj-button href="https://dev.yachting.com/en/#activate-account">
+          Activate my account
+        </mj-button>
+      </mj-column>
+
+    </mj-section>
+
+    <mj-include path="./components/footer.mjml" />
+
+  </mj-body>
+
+</mjml>

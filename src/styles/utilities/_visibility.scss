@@ -1,0 +1,16 @@
+//
+// Visibility
+//
+
+.u-visible {
+  visibility: visible !important;
+}
+
+.u-invisible {
+  visibility: hidden !important;
+}
+
+// TODO unify the naming for js/css utilities
+.is-hidden {
+  display: none !important;
+}
