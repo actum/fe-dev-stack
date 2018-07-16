@@ -17,19 +17,22 @@ require('babel-register')({
 })
 
 const url = require('url')
+
+const chokidar = require('chokidar')
+const cookieParser = require('cookie-parser')
 const express = require('express')
+const proxy = require('express-http-proxy')
 const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackHotMiddleware = require('webpack-hot-middleware')
-const chokidar = require('chokidar')
-const proxy = require('express-http-proxy')
-const cookieParser = require('cookie-parser')
-const webpackConfig = require('./webpack.config')
+
 const config = require('./index')
 const join = require('./join')
+const webpackConfig = require('./webpack.config')
 
 const sourceDir = join(config.sourceDir)
 const watcher = chokidar.watch([sourceDir])
+
 watcher.on('ready', () => {
   watcher.on('all', () => {
     Object.keys(require.cache).forEach((id) => {
@@ -68,6 +71,7 @@ if (config.env.NODE_ENV === 'development') {
       },
     }),
   )
+
   app.use(webpackHotMiddleware(webpackCompiler))
 }
 
@@ -101,6 +105,7 @@ app.get('/:page?', async (req, res) => {
       loggedIn: !!req.cookies.CurrentContact,
     },
   }
+
   const html = await require('./renderToString').default(
     file,
     {
@@ -109,6 +114,7 @@ app.get('/:page?', async (req, res) => {
     },
     initialState,
   )
+
   res.send(html)
 })
 

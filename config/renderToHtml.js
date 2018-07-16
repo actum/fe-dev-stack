@@ -5,7 +5,7 @@ import fse from 'fs-extra'
 import React from 'react'
 import ReactDOM from 'react-dom/server'
 import { Provider } from 'react-redux'
-import configureStore from '../src/configureStore'
+import configureStore from '../src/store/store'
 import config from './index'
 import join from './join'
 

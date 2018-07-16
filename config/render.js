@@ -13,4 +13,5 @@ require('babel-register')({
     'flow',
   ],
 })
-require('./renderToFile.js')
+
+require('./renderToHtml.js')

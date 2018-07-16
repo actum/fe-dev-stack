@@ -3,7 +3,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/server'
 import { Provider } from 'react-redux'
-import configureStore from '../src/configureStore'
+import configureStore from '../src/store/store'
 import page from '../src/pages/page'
 import join from './join'
 
