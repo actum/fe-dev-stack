@@ -5,7 +5,7 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const postcssInlineSvg = require('postcss-inline-svg')
 const webpack = require('webpack')
 
-const config = require('./config')
+const config = require('./index')
 const join = require('./join')
 
 const isProduction = config.env.NODE_ENV === 'production'

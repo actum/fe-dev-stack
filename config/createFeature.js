@@ -2,7 +2,7 @@
 
 const fs = require('fs')
 const fse = require('fs-extra')
-const config = require('./config')
+const config = require('./index')
 const exit = require('./exit')
 const join = require('./join')
 
@@ -55,7 +55,7 @@ import { connect } from 'react-redux'
 import { translate } from 'react-i18next'
 import { pipe } from 'ramda'
 import type { TranslatorProps } from '../../lib/types'
-import type { Config } from './config'
+import type { Config } from './index'
 import type { State as DynamicProps } from './reducer'
 import * as actions from './actions'
 

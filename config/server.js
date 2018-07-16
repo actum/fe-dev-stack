@@ -25,7 +25,7 @@ const chokidar = require('chokidar')
 const proxy = require('express-http-proxy')
 const cookieParser = require('cookie-parser')
 const webpackConfig = require('./webpack.config')
-const config = require('./config')
+const config = require('./index')
 const join = require('./join')
 
 const sourceDir = join(config.sourceDir)

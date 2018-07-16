@@ -3,8 +3,8 @@
 import fs from 'fs'
 import React from 'react'
 import { chain, pipe, uniqBy, toLower } from 'ramda'
-import join from '../../dev/join'
-import config from '../../dev/config'
+import join from '../../config/join'
+import config from '../../config/'
 import page from './page'
 
 const getDirectories = (path: string[]): string[] =>
@@ -25,7 +25,7 @@ const Page = page()(
     </div>
     <ul>
       {pages.map((file) => (
-        <li>
+        <li key={file}>
           <a href={`/${file}`}>{file}</a>
         </li>
       ))}

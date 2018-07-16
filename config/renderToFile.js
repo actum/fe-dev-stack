@@ -6,7 +6,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/server'
 import { Provider } from 'react-redux'
 import configureStore from '../src/configureStore'
-import config from './config'
+import config from './index'
 import join from './join'
 
 fs.readdirSync(join(config.htmlSourceDir)).forEach(async (file) => {

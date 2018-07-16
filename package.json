@@ -1,12 +1,12 @@
 {
   "scripts": {
-    "start:dev": "cross-env DEBUG=express-http-proxy API_URL=https://dev.yachting.com NODE_ENV=development node dev/server",
-    "start:mock": "cross-env DEBUG=express-http-proxy API_URL=localhost:3001 NODE_ENV=development concurrently \"node dev/server\" \"nodemon mokker\"",
-    "start:prod": "cross-env DEBUG=express-http-proxy API_URL=https://dev.yachting.com NODE_ENV=production node dev/server",
+    "start:dev": "cross-env DEBUG=express-http-proxy API_URL=https://dev.yachting.com NODE_ENV=development node config/server",
+    "start:mock": "cross-env DEBUG=express-http-proxy API_URL=localhost:9001 NODE_ENV=development concurrently \"node config/server\" \"nodemon mokker\"",
+    "start:prod": "cross-env DEBUG=express-http-proxy API_URL=https://dev.yachting.com NODE_ENV=production node config/server",
     "svg": "svg-icon-generate --svgDir src/assets/svg --destination src/assets/Icon.js",
-    "build": "cross-env API_URL=/ NODE_ENV=production webpack --config dev/webpack.config.js",
+    "build": "cross-env API_URL=/ NODE_ENV=production webpack --config config/webpack.config.js",
     "build:email": "mjml emails/* -o public/",
-    "html": "cross-env API_URL=/ NODE_ENV=production node dev/render",
+    "html": "cross-env API_URL=/ NODE_ENV=production node config/render",
     "format:js": "prettier --write \"**/*.js\" && eslint dev src --fix",
     "format:styles": "stylelint --config=.stylelintrc \"src/**/*.scss\" --fix",
     "format": "concurrently \"yarn format:js\" \"yarn format:styles\"",
@@ -14,7 +14,7 @@
     "stylelint": "stylelint --config=.stylelintrc \"src/**/*.scss\"",
     "jest": "jest",
     "flow": "flow check",
-    "create:feature": "API_URL=/ node dev/createFeature"
+    "create:feature": "API_URL=/ node config/createFeature"
   },
   "engines": {
     "node": ">=8.0.0"
